@@ -1,0 +1,21 @@
+function CallBeforeExit(){
+	document.getElementById('skm_LockPane').style.display = 'block';
+	if(needToConfirm)
+	{
+			needToConfirm=false;
+			
+					window.scrollTo(0,0);$("#discount").show();skm_LockScreen();return'Hey wait! \n \nC L I C K  "C A N C E L"  O R  "S T A Y  O N  P A G E"'
+			}}
+
+
+function CallBeforeExit_new(){
+	document.getElementById('skm_LockPane').style.display = 'block';
+	if(needToConfirm)
+	{
+			needToConfirm=false;
+			
+					window.scrollTo(0,0);$("#discount_new").show();skm_LockScreen();return'*** WAIT! ***  \n\r Don\'t close this page! Your order is not yet complete. \n\r Would you like to get your Zodiac Love Blueprint  \n\r AND   \n\r  Receive A 50% off Coupon?  \n\r Just Click the "Stay On This Page" button Now!'
+			}}
+
+
+function skm_LockScreen(){var a=document.getElementById("skm_LockPane");if(a){a.className="LockOn"}};

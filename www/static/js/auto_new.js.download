@@ -1,0 +1,296 @@
+var acListTotal   =  0;
+var acListCurrent = -1;
+var acDelay		  = 500;
+var acURL		  = null;
+var acSearchId	  = null;
+var acResultsId	  = null;
+var acSearchField = null;
+var acResultsDiv  = null;
+
+function hide_options() {
+	$(".hide_options").hide();
+	$(".thank_you").fadeIn();
+}
+
+function GetXmlHttpObject() {
+	var objXMLHttp=null
+	if (window.XMLHttpRequest) {
+		objXMLHttp=new XMLHttpRequest()
+	} else if (window.ActiveXObject) {
+		objXMLHttp=new ActiveXObject("Microsoft.XMLHTTP")
+	}
+	return objXMLHttp;
+}
+
+function getXMLHTTP() { //function to return the xml http object
+		var xmlhttp=false;	
+		try{
+			xmlhttp=new XMLHttpRequest();
+		}
+		catch(e)	{		
+			try{			
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			catch(e){
+				try{
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+				}
+				catch(e1){
+					xmlhttp=false;
+				}
+			}
+		}
+		 	
+		return xmlhttp;
+    }
+
+function mtrim(str)
+{
+	return str.replace(/^\s+|\s+$/g,'');
+}
+
+function frmvalidate()
+{
+	
+	
+	needToConfirm = false;
+	
+	if(mtrim(document.orderform.Contact0FirstName.value)=="" || mtrim(document.orderform.Contact0FirstName.value)==null)
+	{
+		alert("Please enter your First Name");
+		document.orderform.Contact0FirstName.focus();
+		return false;
+	}
+	
+	if(mtrim(document.orderform.Contact0LastName.value)=="" || mtrim(document.orderform.Contact0LastName.value)==null)
+	{
+		alert("Please enter your Last Name");
+		document.orderform.Contact0LastName.focus();
+		return false;
+	}
+	
+	if(document.orderform.Email.value=="" || document.orderform.Email.value==null)
+	{
+		alert("Please enter your valid Email Address");
+		document.orderform.Email.focus();
+		return false;
+	}
+	
+	var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    var address = document.orderform.Email.value;
+	
+	if(reg.test(address) == false)
+	{
+		alert("Please enter your valid Email Address");
+		document.orderform.Email.focus();
+		return false;
+	}
+	
+	if(document.orderform.defaultcountry.value=="")
+	{
+		alert("Please select your Country of Birth");
+		document.orderform.defaultcountry.focus();
+		return false;
+	}
+	
+	
+	if(document.orderform.defaultcountry.value=="USA")
+	{
+		if(document.orderform.defaultstate.value=="")
+		{
+			alert("Please select your State of Birth");
+			document.orderform.defaultstate.value = "";
+			document.orderform.defaultstate.focus();
+			return false;
+		}
+		
+		document.orderform.Contact0_Birthcountry.value = document.orderform.defaultstate.value;
+	}
+	else
+	{
+		document.orderform.Contact0_Birthcountry.value = document.orderform.defaultcountry.value;	
+	}
+	if(document.getElementById("Contact0City3"))
+	{
+		if(mtrim(document.orderform.Contact0City3.value)=="")
+		{
+			alert("Please enter your Town/City of Birth");
+			document.orderform.Contact0City3.focus();
+			return false;
+		}
+	}
+	
+	
+	
+	
+	
+	
+	/*if(document.orderform.Contact0_birthplaceid.value=="")
+	{
+		alert("Entered Town/City of Birth is not valid");		
+		return false;
+	}*/
+	
+	if(mtrim(document.orderform.Contact0StreetAddress1.value)=="")
+	{
+		alert("Please enter your Address");	
+		document.orderform.Contact0StreetAddress1.focus();
+		return false;
+	}
+	
+	if(mtrim(document.orderform.Contact0City.value)=="")
+	{
+		alert("Please enter your City");	
+		document.orderform.Contact0City.focus();
+		return false;
+	}
+	
+	if(mtrim(document.orderform.Contact0PostalCode.value)=="")
+	{
+		alert("Please enter your Zip/Postal Code");	
+		document.orderform.Contact0PostalCode.focus();
+		return false;
+	}
+	
+	if(document.orderform.Contact0_roiCountry.value=="")
+	{
+		alert("Please select your Billing Country / US State");
+		document.orderform.Contact0_roiCountry.focus();
+		return false;
+	}
+	
+	if(mtrim(document.orderform.Contact0State.value)=="")
+	{
+		alert("Please select/enter your State/Province");	
+		document.orderform.Contact0State.focus();
+		return false;
+	}
+	
+	
+	if(document.orderform.CreditCard0CardType.value=="")
+	{
+		alert("Please select your Card Type");
+		document.orderform.CreditCard0CardType.focus();
+		return false;
+	}
+	
+	if(document.orderform.CreditCard0CardNumber.value=="")
+	{
+		alert("Please enter your Card Number");
+		document.orderform.CreditCard0CardNumber.focus();
+		return false;
+	}
+	
+	if(document.orderform.CreditCard0ExpirationMonth.value=="")
+	{
+		alert("Please select your Card Month");
+		document.orderform.CreditCard0ExpirationMonth.focus();
+		return false;
+	}
+	
+	if(document.orderform.CreditCard0ExpirationYear.value=="")
+	{
+		alert("Please select your Card Year");
+		document.orderform.CreditCard0ExpirationYear.focus();
+		return false;
+	}
+	
+	if(document.orderform.CreditCard0VerificationCode.value=="")
+	{
+		alert("Please enter your Card CVV");
+		document.orderform.CreditCard0VerificationCode.focus();
+		return false;
+	}
+	if(document.orderform.termsuse.checked==false)
+	{
+		alert("Please Select Terms of Service");
+		return false;
+	}
+	$("#allowmin").css("display", "block");
+		
+	var data = {'email':document.orderform.Email.value,'pagetag':'desktop'};
+		$.post('/insta/scripts/store_time_diff.php', data, function(returnData){
+		//alert('The server said ' + returnData);
+		
+		if(returnData == 'done')
+		{
+			$("#Submit").attr('disabled','disabled');
+			
+		
+			needToConfirm = false;
+			document.orderform.submit();
+		}
+	
+	});
+	
+	
+	return false;
+	
+
+	
+}
+var counterfield = 0;
+
+function selectcountry()
+{
+	document.getElementById("Contact0City3").value="";
+	document.getElementById("birthplaceid").value="";
+	if(document.orderform.defaultcountry.value=='USA'){
+		document.orderform.Contact0_Birthcountry.value = "";
+		document.orderform.defaultstate.value = "";
+		$('.state_div').show();
+	}else{
+		document.orderform.Contact0_Birthcountry.value = document.orderform.defaultcountry.value;	
+		document.getElementById("Contact0City3").value="";
+		document.orderform.defaultstate.value = "";
+		$('.state_div').hide();
+	}
+	return true;
+	document.getElementById("showcityfield").style.display="block";
+	
+	
+	document.orderform.defaultstate.value = "";	
+	
+	
+	document.orderform.Contact0_Birthcountry.value = document.orderform.defaultcountry.value;	
+	
+	if(counterfield == 0 )
+	{
+		$("#showcityfield").fadeIn(600);
+		
+		counterfield++;
+	}
+}
+	
+	
+function selectstate()
+{
+	
+	document.orderform.defaultcountry.value = "USA";	
+	document.getElementById("showcityfield").style.display="block";
+	
+	document.getElementById("Contact0City3").value="";
+	document.getElementById("birthplaceid").value="";
+	document.orderform.Contact0_Birthcountry.value = document.orderform.defaultstate.value;	
+	
+	
+}
+
+
+
+
+
+function selectdiv(bplace,placeid)
+{
+	needToConfirm = false;
+	document.getElementById("searchField").value=bplace;
+	document.getElementById("birthplaceid").value=placeid;
+	
+	
+	document.getElementById("auto").style.display="none";
+	$("#auto").html("");
+}
+
+
+
+    

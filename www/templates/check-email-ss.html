@@ -1,0 +1,73 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-NJXGk7R+8gWGBdutmr+/d6XDokLwQhF1U3VA7FhvBDlOq7cNdI69z7NQdnXxcF7k" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style/www.css" type="text/css">
+    <link rel="stylesheet" href="/static/style/cc.css" type="text/css">
+    <title>Free Reading | Elysia Medium</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tinos:400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js" integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js'></script>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.js'></script>
+</head>
+<body class="v3-signup" style="background: url(/static/images/skybg.jpg) center center / cover no-repeat fixed rgb(139, 208, 242);">
+<section class="thin-signup__header">
+    <img style="height: 120px; display: block; margin: 0 auto;" src="/static/images/elysiaheader.png">
+</section>
+<div class="v3-body" style="padding-top: 0">
+    <div class="wrap ss-main">
+        <h1>THANK YOU, {{ account.first_name }}</h1>
+        <h2>( DON'T CLOSE THIS PAGE! )</h2>
+        <span>Your request for a Free Reading has been received, and will be sent within 24 hours.</span>
+        <span class="ss-steps">1. Check Your Email Inbox</span>
+        <h4>A WELCOME EMAIL HAS BEEN SENT TO YOU</h4>
+        <span>If you don't see it in your Inbox, please check your "Spam" folder as your computer may have mistakenly filed it there.</span>
+        <img src="/static/images/gmail1.jpg">
+        <h5>Open the "Spam" folder and click on the welcome email that I just sent you.</h5>
+        <img src="/static/images/gmail2.jpg">
+        <h5>Click "Not Spam" to make sure you don't miss my email with a link to your astrological reading tomorrow.</h5>
+        <img src="/static/images/gmail3.gif">
+        <h5>"And to ensure that there are no problems getting your email, make sure that you mark us as important by clicking the 'star' next to this email."</h5>
+        <div class="ss-facebookshare">
+            <span><b>Important!!</b> >>>Please share the love! I’d be humbled if you would share this opportunity with your friends.</span>
+            <p>Simply click the SHARE button below - you and your friends can compare horoscopes and see how each other’s 2019 stacks up!</p>
+            <img src="/static/images/facebookshare.png">
+        </div>
+        <span>See you soon,</span>
+        <span class="sales-signature">Elysia</span>
+    </div>
+</div>
+<div class="ss-lightbox"></div>
+<div class="ss-checkemail">
+    <img class="ss-cross" src="/static/images/cross.png">
+    <img src="/static/images/flyemail.jpg">
+    <h2>KEEP AN EYE ON YOUR INBOX, {{ account.first_name }}</h2>
+    <span>Your Reading Will Be Ready Within 24 Hours, But It May Be Much Sooner!</span>
+</div>
+<img src="https://vaction-pharepper.com/postback?cid={{ cid }}" width="1" height="1">
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1033777916753166');
+    fbq('track', 'Lead');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=1033777916753166&ev=Lead&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<script>
+    $(".ss-cross").click(function() {
+        $(".ss-checkemail, .ss-lightbox").hide();
+    });
+</script>
+</body>
+</html>

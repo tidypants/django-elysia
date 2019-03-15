@@ -1,0 +1,150 @@
+{% extends "product_pages/base-product.html" %}
+{% load static %}
+{% block title %}Checkout{% endblock %}
+{% block content %}
+    <div class="grid-x">
+        <div class="cell large-9">
+            <div class="sales-content">
+                <span style="color: #e0a850; text-align: center">SECURE PAYMENT PAGE</span>
+                <span class="sales-signature">Payment details</span>
+                <span>You have selected : <b>3 payments with no extra charge</b>. This option lets you spread your contribution over a period of three months. As such, you will pay: </span>
+                <span>✔ One third of the full amount today</span>
+                <span>✔ Another third will be automatically charged to your bank account 30 days from now</span>
+                <span>✔ The last third will be automatically charged to your bank account 60 days from now.</span>
+                <span>You will receive: <b>Great 12-Month Angelic Tarot Reading</b></span>
+                <span>You are paying a contribution amounting to: <b>(paid in USD - ${{ price }}.00)</b></span>
+                <span>Today you are paying <b>${{ installment|floatformat:"2" }}</b></span>
+                <span>Simple and crystal clear! As usual for my services, this Help entitles you to my 100% Satisfaction Guarantee.</span>
+                <span class="sales-signature">Elysia</span>
+                <div class="payment-heading">
+                    <h3>Secure Payment</h3>
+                </div>
+                <form action="/process?cid={{ cid }}&uid={{ account.id }}" method="post" id="payment-form">
+                    <h2>Payment</h2>
+                    <div id="checkoutForm">
+                        <div class="group">
+                            <span id="card-errors"></span>
+                            <div>
+                                <label for="card-number">Card Number</label>
+                                <div id="card-number-element" class="field" style="padding: 15px 12px;"></div>
+                            </div>
+                            <div class="halfInput" style="margin-right: 15px;">
+                                <label for="card-expiry">MM / YY</label>
+                                <div id="card-expiry-element" class="field" style="padding: 15px 12px;"></div>
+                            </div>
+                            <div class="halfInput">
+                                <label for="card-cvv">CVV</label>
+                                <div id="card-cvc-element" class="field" style="padding: 15px 12px;"></div>
+                            </div>
+                        </div>
+                        <h2 id="orderTotal">${{ installment|floatformat:"2" }} today</h2>
+                        <input type="hidden" id="method" name="method" value="installments">
+                        <input type="hidden" id="price" name="price" value="{{ price }}">
+                        {% csrf_token %}
+                        <button type="submit">VALIDATE</button>
+                    </div>
+                </form>
+                <script>
+                    var elements = stripe.elements();
+
+                    var style = {
+                        base: {
+                            iconColor: '#666EE8',
+                            fontSize: '17px',
+                            fontFamily: 'Helvetica Neue',
+                            color: '#43454b',
+                        },
+                    };
+
+                    var cardNumberElement = elements.create('cardNumber', {
+                        style: style,
+                        placeholder: "Card Number"
+                    });
+                    cardNumberElement.mount('#card-number-element');
+
+                    var cardExpiryElement = elements.create('cardExpiry', {
+                        style: style,
+                        placeholder: "Expiry Date"
+                    });
+                    cardExpiryElement.mount('#card-expiry-element');
+
+                    var cardCvcElement = elements.create('cardCvc', {
+                        style: style
+                    });
+                    cardCvcElement.mount('#card-cvc-element');
+
+                    var form = $("#payment-form");
+
+                    $.validator.methods.email = function( value, element ) {
+                        return this.optional( element ) || /[a-zA-Z0-9_.-]+@[a-zA-Z0-9_.-]+\.[a-zA-Z0-9_.-]+/.test( value );
+                    };
+
+                    $.validator.addMethod("fullname", function(value,element){
+                        return this.optional( element ) || /[a-zA-Z]+ [a-zA-Z]/.test( value );
+                    }, "Please enter full name" );
+
+                    form.validate({
+                        rules: {
+                            name: {
+                                required: true,
+                                fullname: true
+                            },
+                            email_address: {
+                                required: true,
+                                email: true
+                            },
+                            address_country: {
+                                required: true
+                            },
+                            address_line1: {
+                                required: true
+                            },
+                            address_city: {
+                                required: true
+                            },
+                            address_state: {
+                                required: true
+                            },
+                            address_zip: {
+                                required: true
+                            }
+                        }
+                    });
+
+                    form.submit(function(event) {
+                        event.preventDefault();
+                        if (form.valid()) {
+                            $('#payment-form button').prop('disabled', true);
+                            stripe.createToken(cardNumberElement).then(function(result) {
+                                if (result.error) {
+                                    var errorElement = document.getElementById('card-errors');
+                                    errorElement.textContent = result.error.message;
+                                    $('#payment-form button').prop('disabled', false);
+                                } else {
+                                    stripeTokenHandler(result.token);
+                                }
+                            });
+                        }
+                    });
+
+                    function stripeTokenHandler(token) {
+                        var form = document.getElementById('payment-form');
+                        var hiddenInput = document.createElement('input');
+                        hiddenInput.setAttribute('type', 'hidden');
+                        hiddenInput.setAttribute('name', 'stripeToken');
+                        hiddenInput.setAttribute('value', token.id);
+                        form.appendChild(hiddenInput);
+                        form.submit();
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="cell large-3">
+            <div class="sales-content">
+                <h5>100% Secure</h5>
+                <span>You benefit from my satisfaction guarantee. Should the Help received not bring you total satisfaction, you could ask for it to be refunded; this is my commitment to you, which is clearly indicated in my legal terms.</span>
+				<span>Any questions can be answered at support@elysia-medium.com</span>
+            </div>
+        </div>
+    </div>
+{% endblock %}

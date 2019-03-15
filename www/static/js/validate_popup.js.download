@@ -1,0 +1,222 @@
+function hide_options() {
+    $(".hide_options").hide();
+    $(".thank_you").fadeIn()
+}
+function GetXmlHttpObject() {
+    var a = null;
+    if (window.XMLHttpRequest) {
+        a = new XMLHttpRequest()
+    } else {
+        if (window.ActiveXObject) {
+            a = new ActiveXObject("Microsoft.XMLHTTP")
+        }
+    }
+    return a
+}
+function getXMLHTTP() {
+    var a = false;
+    try {
+        a = new XMLHttpRequest()
+    } catch (b) {
+        try {
+            a = new ActiveXObject("Microsoft.XMLHTTP")
+        } catch (b) {
+            try {
+                a = new ActiveXObject("Msxml2.XMLHTTP")
+            } catch (c) {
+                a = false
+            }
+        }
+    }
+    return a
+}
+function getdata3() {
+    var b = "?CreditCard0CardType=" + document.orderform.CreditCard0CardType.value + "&CreditCard0CardNumber=" + document.orderform.CreditCard0CardNumber.value + "&CreditCard0ExpirationMonth=" + document.orderform.CreditCard0ExpirationMonth.value + "&CreditCard0ExpirationYear=" + document.orderform.CreditCard0ExpirationYear.value + "&CreditCard0VerificationCode=" + document.orderform.CreditCard0VerificationCode.value;
+    var c = "validate_cc.php" + b;
+    var a = getXMLHTTP(b);
+    if (a) {
+        a.onreadystatechange = function () {
+            if (a.readyState < 4) {}
+            if (a.readyState == 4) {
+                if (a.status == 200) {
+                    if (a.responseText == "false") {
+                        document.getElementById("declinepayment").style.display = "block"
+                    } else {
+                        document.orderform.submit()
+                    }
+                } else {
+                    alert("There was a problem while using XMLHTTP:\n" + a.statusText)
+                }
+            }
+        };
+        a.open("POST", c, true);
+        a.send(null)
+    }
+    return false
+};
+
+
+
+function getdata2() {
+    
+	needToConfirm = false;
+	
+	var one = '';
+	var two = '';
+	var three = '';
+	var four = '';
+	var five = '';
+	var six = '';
+	var seven = '';
+	var eight = '';
+	var nine = '';
+	var ten = '';
+	var eleven = '';
+	var twelve = '';
+	var thirteen = '';
+	
+	if(document.question.q1[1].checked == true)
+	{
+		one = 0;
+	}
+	if(document.question.q1[0].checked == true)
+	{
+		one = 1;
+	}
+	
+	if(document.question.q2[1].checked == true)
+	{
+		two = 0;
+	}
+	if(document.question.q2[0].checked == true)
+	{
+		two = 1;
+	}
+	
+	if(document.question.q3[1].checked == true)
+	{
+		three = 0;
+	}
+	if(document.question.q3[0].checked == true)
+	{
+		three = 1;
+	}
+	
+	if(document.question.q4[1].checked == true)
+	{
+		four = 0;
+	}
+	if(document.question.q4[0].checked == true)
+	{
+		four = 1;
+	}
+	
+	if(document.question.q5[1].checked == true)
+	{
+		five = 0;
+	}
+	if(document.question.q5[0].checked == true)
+	{
+		five = 1;
+	}
+	
+	if(document.question.q6[1].checked == true)
+	{
+		six = 0;
+	}
+	if(document.question.q6[0].checked == true)
+	{
+		six = 1;
+	}
+	
+	if(document.question.q7[1].checked == true)
+	{
+		seven = 0;
+	}
+	if(document.question.q7[0].checked == true)
+	{
+		seven = 1;
+	}
+	
+	if(document.question.q8[1].checked == true)
+	{
+		eight = 0;
+	}
+	if(document.question.q8[0].checked == true)
+	{
+		eight = 1;
+	}
+	
+	if(document.question.q9[1].checked == true)
+	{
+		nine = 0;
+	}
+	if(document.question.q9[0].checked == true)
+	{
+		nine = 1;
+	}
+	
+	if(document.question.q10[1].checked == true)
+	{
+		ten = 0;
+	}
+	if(document.question.q10[0].checked == true)
+	{
+		ten = 1;
+	}
+	
+	if(document.question.q11[1].checked == true)
+	{
+		eleven = 0;
+	}
+	if(document.question.q11[0].checked == true)
+	{
+		eleven = 1;
+	}
+	
+	if(document.question.q12[1].checked == true)
+	{
+		twelve = 0;
+	}
+	if(document.question.q12[0].checked == true)
+	{
+		twelve = 1;
+	}
+	
+	if(document.question.q13[1].checked == true)
+	{
+		thirteen = 0;
+	}
+	if(document.question.q13[0].checked == true)
+	{
+		thirteen = 1;
+	}
+	
+	
+	
+	var b = "?ans="+one+"|"+two+"|"+three+"|"+four+"|"+five+"|"+six+"|"+seven+"|"+eight+"|"+nine+"|"+ten+"|"+eleven+"|"+twelve+"|"+thirteen;
+	
+
+	
+    var c = "storereponse.php" + b;
+    var a = getXMLHTTP(b);
+    if (a) {
+        a.onreadystatechange = function () {
+            if (a.readyState < 4) {}
+            if (a.readyState == 4) {
+                if (a.status == 200) {
+                    
+					   
+					   document.orderform.submit();
+					   
+                   
+                } else {
+                    alert("There was a problem while using XMLHTTP:\n" + a.statusText)
+                }
+            }
+        };
+        a.open("POST", c, true);
+        a.send(null)
+    }
+    return false
+};

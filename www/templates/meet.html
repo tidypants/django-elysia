@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Free Angel Consultation{% endblock %}
+{% block content %}
+    <div class="grid-x maingrid-x pageheader">
+        <div class="col">
+            <h2 class="text-center">Elysia</h2>
+        </div>
+    </div>
+    <div class="grid-x mainrow">
+        <div class="cell medium-8">
+            <div class="grid-x meet">
+                <div class="col">
+                    <div class="meetgreeting">
+                        <em>If you feel the need for a specific <strong>spiritual awakening</strong>, for swift and efficient <strong>help</strong>, then you have come to the right place, at the right time. Don't miss out on this opportunity to find happiness in your life: Ask me to <a href="/free-angel-consultation">consult your <strong>guardian angel</strong></a> on your behalf. </em>
+                    </div>
+                    <div class="faq">
+                        <h3><em>"There is an angel in every little thing"</em></h3>
+                        <p>This might be my favorite <strong>spiritual quote</strong> because nothing could be more true! We all have a <strong>Guardian Angel</strong>. How can you talk to him ? I can help you by interceding with your <strong>Angel</strong> on your behalf. Money, Luck, Love, Work, Protection, no matter what you are worried about, I can bring you swift, clear, and detailed answers.</p>
+                        <h3>A confidant for Guardian Angels</h3>
+                        <p>I've been a <strong>psychic</strong> for more than 40 years, and I am gifted with particularly accurate <strong>medium </strong>abilities. However, I was not born with them. My wonderful powers appeared when I met a '<strong>being of light</strong>' when I was 7.</p>
+                        <h4>My near death experience changed my life</h4>
+                        <p>You have probably already heard about it, but I lived through it! After a serious fall, I lived a <strong>near death experience</strong> during which I left my own body. I saw myself lying on a hospital bed. Then I ended up in a tunnel full of soothing presences. There was soft light coming from the end of the tunnel. I could hear gentle and soothing music. I felt good. A <strong>being of light</strong> with a benevolent stare came to me and took me by the hand. It was my <strong>Guardian Angel</strong>. I can't tell you how long it lasted because time is not a factor in that dimension. My parents told me I spent three days in a coma... This accident changed my life.I woke up with the ability to communicate with Angels, and with a mission: to do good, all around, to share messages of hope and watch over other people's well-being. Since that day, I've been delighted to fulfill this mission that the angels entrusted me with: to guide you on your life path!</p>
+                        <h3>You can reach spiritual wellness</h3>
+                        <p>I receive countless messages of thanks every day. <a href="/testimonials">These testimonials</a> always warm my heart. They prove that my mediumnic powers are precious, effective, and helpful for those who contact me. <strong>And you are entitled to your own share of happiness</strong><strong>.</strong> I will unveil <strong>who your Guardian Angel is</strong> and <strong>what he has to say to you</strong>. Do you want to know it all? Fill in the form now and validate your request! There is no further commitment. I am simply offering you to <strong>try my celestial gifts for free</strong> to help you in your life.</p>
+                        <h5>See you soon,</h5>
+                        <span class="signature">Elysia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell medium-4">
+            <div class="sidebarmind">
+                <div class="mind-reader text-center" style="height:344px;">
+                    <h3>Your Guardian Angel loves you. Discover his personal message for YOU!</h3>
+                    <p class="uparrow">
+                        <span class="btn-round icon-arrow"></span>
+                    </p>
+                    <p class="iwant">I Want It Free!</p>
+                </div>			</div>
+            <div class="mostread">
+                <h3 class=" text-center">Most Read Posts</h3>
+                {% for post in posts %}
+                    <div class="grid-x" style="border:0px solid #000;">
+                        <div class="cell medium-4 blogpic">
+                            <img src="{{ post.image }}" title="{{ post.title }}" alt="{{ post.title }}">
+                        </div>
+                        <div class="cell medium-8 postcontent">
+                            <h3><a href="{{ post.link }}">VENUS, THE PLANET THAT UNITES AND SOOTHES</a></h3>
+                            <h6>{{ post.content|striptags|safe|truncatechars:"30" }}</h6>
+                            <div>
+                                <p class="readplus">
+                                    <a class="TestimonialButton" href="{{ post.link }}" tabindex="0">
+                                        <span>Read +</span>
+                                        <span class="btn-round icon-arrow-right"></span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            <div class="mypassions">
+                <h3 class=" text-center">My Passions</h3>
+                <a href="messages.php?tag=Astrology">Astrology</a><a href="messages.php?tag=happiness">Happiness</a><a href="messages.php?tag=meditation">Meditation</a><a href="messages.php?tag=well being">Well Being</a><a href="messages.php?tag=harmony">Harmony</a>				</div>
+        </div>
+    </div>
+{% endblock %}

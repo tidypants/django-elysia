@@ -1,0 +1,791 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body { padding:0px; margin:0px; background:url(https://static.astrologyanswers.com/secure/offers/tpg/checkout_ds2/responsive/original/images_bw/main_bgrepeat.jpg) left top repeat-x #7abcf4; }
+p, h1, h2, h3, h4, h5, h6, form { padding:0px; margin:0px; }
+img { border:none; }
+
+.clearb { clear:both; }
+
+.wrapper { width:772px; margin:0px auto; }
+
+.main { width:728px; float:left; position:relative; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; background-color:#ffffff; padding:0 22px 22px 22px; }
+
+.header_sec { width:728px; float:left; padding:18px 0; }
+.logo { float:left; }
+.header_right_txt { float:right; font-family:Arial; font-size:14px; color:#1d1c1c; text-align:right; font-weight:normal; }
+.header_right_txt span { font-size:14px; color:#1d1c1c; font-weight:bold; }
+.header_right_txt h3 { font-family:Arial; font-size:17px; color:#1d1c1c; font-weight:bold; text-transform:uppercase; }
+.header_right_txt img { margin:0 2px -3px 4px; }
+
+.top_matter { width:712px; float:left; font-family:Arial; font-size:15px; color:#1d1c1c; text-align:left; line-height:25px; padding:12px 0 42px 0; margin:0 8px; }
+.top_matter span { font-family:Arial; font-size:15px; color:#1d1c1c; font-weight:bold; }
+.top_matter h3 { font-family:Georgia, "Times New Roman", Times, serif; font-size:37px; color:#fe0000; line-height:44px; font-weight:normal; padding:15px 0 10px 0; }
+.top_matter h3 span { font-size:26px; color:#fe0000; line-height:44px; font-weight:bold; }
+.top_matter img.katherine_pic { margin:-20px 10px 0 -9px; }
+.top_matter img.adrian_pic { margin:-10px 0 10px -25px; }
+.top_matter img.tick { margin:0 5px 0 10px; }
+.top_matter ul { padding:0px; margin:0px; }
+.top_matter li { padding:0 0 0 42px; margin:30px 0 0 0; list-style:none; display:block; background:url(https://static.astrologyanswers.com/secure/offers/tpg/checkout_ds2/responsive/original/images_bw/tick.png) 9px 5px no-repeat; }
+.top_matter li p { padding:30px 60px 0 60px; }
+
+.guidance_sec { width:712px; float:left; font-family:Arial; font-size:15px; color:#1d1c1c; text-align:left; line-height:25px; border-top:1px solid #1d1c1c; padding:32px 0 42px 0; margin:0 8px; }
+.guidance_sec span { font-size:15px; color:#1d1c1c; font-weight:bold; }
+.guidance_sec span.free { font-family:Georgia, "Times New Roman", Times, serif; font-size:13px; color:#fe0000; font-weight:bold; }
+.guidance_sec span.price { font-size:15px; color:#1d1c1c; font-weight:normal; text-decoration:line-through; }
+.guidance_sec span.discount { font-size:13px; color:#1d1c1c; font-weight:normal; font-style:italic; }
+.guidance_sec h3 { font-family:Arial; font-size:20px; color:#1d1c1c; font-weight:bold; line-height:48px; }
+.guidance_sec img { margin:23px 0 30px 43px; }
+.guidance_sec p { padding:12px 0; }
+.guidance_left_matter { width:285px; float:left; padding:0 20px 0 20px; }
+.guidance_left_matter h6 { font-family:Georgia, "Times New Roman", Times, serif; font-size:19px; color:#fe0000; font-weight:bold; line-height:26px; }
+.guidance_right_matter { width:370px; float:left; }
+
+.confidential_txt { width:712px; float:left; font-family:Georgia, "Times New Roman", Times, serif; font-size:21px; color:#fe0000; text-align:center; font-weight:bold; line-height:28px; border-top:1px solid #1d1c1c; border-bottom:1px solid #1d1c1c; padding:16px 0; margin:0 8px; }
+
+.answers_sec { width:712px; float:left; background-color:#f4f4f4; font-family:Arial; font-size:13px; color:#1d1c1c; text-align:left; font-weight:normal; line-height:20px; padding:28px 0; margin:0 8px; }
+.answers_inner { width:712px; float:left; padding:5px 0; }
+.answers_list_txt { width:524px; float:left; text-transform:uppercase; padding:0 0 0 44px; }
+.answers_yes_no_sec { width:144px; float:left; font-size:12px; }
+.answers_yes_no { width:72px; float:left; }
+.answers_yes_no .radiobtn { width:20px; float:left; height:20px; }
+.answers_yes_no .yesno_txt { width:48px; float:left; padding:0 0 0 4px; }
+
+.guarantee_sec { width:712px; float:left; margin:0 8px; }
+.guarantee_top_txt { width:712px; float:left; font-family:Arial; font-size:19px; color:#0f0f0f; text-align:center; font-weight:normal; line-height:28px; border-top:1px solid #1d1c1c; border-bottom:1px solid #1d1c1c; padding:16px 0; }
+.guarantee_top_txt h3 { font-family:Georgia, "Times New Roman", Times, serif; font-size:25px; color:#fe0000; font-weight:bold; padding:0 0 4px 0; }
+.guarantee_inner { width:712px; float:left; padding:34px 0 42px 0; }
+.guarantee_left_matter { width:420px; float:left; font-family:Arial; font-size:14px; color:#1d1c1c; text-align:left; font-weight:normal; line-height:23px; }
+.guarantee_left_matter span { color:#1d1c1c; font-weight:bold; font-style:italic; }
+.guarantee_left_matter h3 { font-family:Georgia, "Times New Roman", Times, serif; font-size:20px; color:#fe0000; font-weight:bold; line-height:36px; margin:8px 0 0 0; }
+.guarantee_left_matter p { padding:10px 0; }
+.guarantee_right_matter_sec { width:216px; float:right; font-family:Arial; font-size:12px; color:#1d1c1c; font-weight:normal; line-height:19px; border:3px solid #000000; background-color:#f6f9fc; padding:0 16px; margin:58px 0 0 0; }
+.guarantee_right_matter_sec span { font-size:12px; color:#1d1c1c; font-weight:bold; line-height:17px; }
+.guarantee_right_matter_sec p { padding:8px 0; }
+.guarantee_right_matter { width:216px; float:left; padding:10px 0 15px 0; }
+.guarantee_right_matter1 { width:216px; float:left; border-top:1px solid #000000; padding:10px 0 15px 0; }
+
+
+.item_details_sec { width:728px; float:left; }
+.item_details_topsec { width:726px; float:left; font-family:Arial; font-size:15px; color:#ffffff; background-color:#101010; line-height:40px; padding:0 1px; }
+.item_txt { width:192px; float:left; padding:0 0 0 36px; }
+.description_txt { width:260px; float:left; padding:0 0 0 56px; }
+.price_txt { width:180px; float:left; text-align:center; }
+.item_details_midsec { width:726px; float:left; font-family:Arial; font-size:13px; color:#1d1c1c; line-height:21px; background:url(https://static.astrologyanswers.com/secure/offers/tpg/checkout_ds2/responsive/original/images_bw/details_bg.jpg) left top repeat-y; border-bottom:1px solid #7d7d7d; border-left:1px solid #7d7d7d; border-right:1px solid #7d7d7d; }
+.item_details_mid1 { width:726px; float:left; padding:15px 0 20px 0; }
+.item_txt_1 { width:214px; float:left; font-family:Arial; font-size:12px; color:#1d1c1c; line-height:19px; padding:15px 6px 0 8px; }
+.item_txt_1 h3 { clear:both; font-family:Georgia, "Times New Roman", Times, serif; font-size:14px; color:#fe0000; font-weight:bold; padding:18px 0 0 4px; }
+.item_txt_1 img { margin:-7px 7px 0 0; }
+.description_txt_1 { width:286px; float:left; padding:7px 15px 0 15px; }
+.description_txt_1 span { font-weight:bold; }
+.description_txt_1 p { padding:8px 0; }
+.price_txt_1 { width:180px; float:left; font-family:Arial; font-size:17px; color:#ff0000; font-weight:bold; text-align:center; line-height:21px; }
+.price_txt_1 span { font-size:11px; color:#1d1c1c; font-weight:normal; line-height:18px; }
+.price_txt_1 span.payment { font-size:11px; color:#1d1c1c; font-weight:normal; text-decoration:underline; }
+.price_txt_1 h3 { font-family:Arial; font-size:18px; color:#121212; font-weight:bold; }
+.price_txt_1 h3 span { font-family:Arial; font-size:18px; color:#ff0000; font-weight:bold; text-decoration:line-through; }
+.price_txt_1 p { padding:15px 0; }
+.details_reading_txt { width:686px; float:left; font-family:Arial; font-size:14px; color:#1d1c1c; font-weight:normal; text-align:center; line-height:21px; background-color:#ffe599; border-bottom:1px solid #636363; border-top:1px solid #636363; padding:10px 20px; }
+.details_reading_txt span { font-size:14px; color:#1d1c1c; font-weight:bold; }
+.details_reading_txt span.red { font-size:14px; color:#ff0000; font-weight:bold; }
+.details_reading_txt p { padding:5px 0; }
+.item_txt_2 { width:216px; float:left; text-align:center; padding:15px 6px 0 6px; }
+.price_txt_2 { width:160px; float:left; font-family:Arial; font-size:18px; color:#ff0000; font-weight:bold; text-align:center; line-height:21px; padding:0 10px; }
+.price_txt_2 span { font-size:11px; color:#1d1c1c; font-weight:normal; line-height:18px; }
+.price_txt_2 span.payment { font-size:11px; color:#1d1c1c; font-weight:normal; text-decoration:underline; }
+.price_txt_2 h3 { font-family:Arial; font-size:18px; color:#ff0000; font-weight:bold; padding:40px 0 0 0; }
+.price_txt_2 h3 span { font-family:Arial; font-size:18px; color:#ff0000; font-weight:bold; text-decoration:line-through; }
+.price_txt_2 p { padding:25px 0; }
+
+.form_sec { width:728px; float:left; position:relative; margin:52px 0 0 0; }
+.secure_txt { width:728px; float:left; background-color:#101010; font-family:Arial; font-size:20px; color:#ffffff; text-align:center; line-height:40px; }
+.form_inner_sec { width:706px; float:left; background-color:#f4f4f4; border-bottom:1px solid #7d7d7d; border-left:1px solid #7d7d7d; border-right:1px solid #7d7d7d; padding:10px; }
+.form_left_sec { width:342px; float:left; }
+.form_box { width:342px; float:left; }
+.form_top_txt { width:342px; float:left; font-family:Arial; font-size:16px; color:#ffffff; text-align:center; font-weight:bold; line-height:35px; background-color:#101010; }
+.form_box_inner { width:342px; float:left; padding:0 0 20px 0; }
+.form_field_sec { width:342px; float:left; padding:11px 0 3px 0; }
+.form_field_sec1 { width:342px; float:left; padding:11px 0 0 0; }
+.form_field_sec1 img { margin:0 7px 0 0; }
+.form_txt { width:130px; float:left; font-family:Arial; font-size:13px; color:#1d1c1c; text-align:left; font-weight:bold; line-height:28px; padding:0 0 0 8px; }
+.what_txt { width:100px; float:left; font-family:Arial; font-size:11px; color:#1d1c1c; text-align:left; font-weight:normal; line-height:28px; padding:0 0 0 3px; }
+.what_txt a { color:#1d1c1c; text-decoration:underline; }
+.form_field { float:left; }
+.form_field_1 { float:left; margin:0 9px 0 0; }
+.form_txtbox { width:184px; float:left; background-color:#ffffff; border:1px solid #979797; font-family:Arial; font-size:12px; color:#1d1c1c; text-align:left; font-weight:normal; height:20px; line-height:20px; padding:3px; }
+.form_txtbox_1 { width:192px; float:left; background-color:#ffffff; border:1px solid #979797; font-family:Arial; font-size:12px; color:#1d1c1c; text-align:left; font-weight:normal; height:28px; line-height:28px; padding:3px; }
+.form_txtbox_2 { width:96px; float:left; background-color:#ffffff; border:1px solid #979797; font-family:Arial; font-size:12px; color:#1d1c1c; text-align:left; font-weight:normal; height:20px; line-height:20px; padding:3px; }
+.form_txtbox_3 { width:64px; float:left; background-color:#ffffff; border:1px solid #979797; font-family:Arial; font-size:12px; color:#1d1c1c; text-align:left; font-weight:normal; height:28px; line-height:28px; padding:3px; }
+.form_txtbox_4 { width:84px; float:left; background-color:#ffffff; border:1px solid #979797; font-family:Arial; font-size:12px; color:#1d1c1c; text-align:left; font-weight:normal; height:28px; line-height:28px; padding:3px; }
+.form_txtbox_5 { width:66px; float:left; background-color:#ffffff; border:1px solid #979797; font-family:Arial; font-size:12px; color:#1d1c1c; text-align:left; font-weight:normal; height:20px; line-height:20px; padding:3px; }
+.currencies_txt { width:342px; float:left; font-family:Arial; font-size:13px; color:#1d1c1c; font-weight:bold; margin:20px 0 0 0; }
+.currencies_txt a { color:#2677c2; text-decoration:underline; }
+
+.form_right_sec { width:350px; float:right; position:relative; }
+.bonus_list { width:350px; float:left; font-family:Arial; font-size:14px; color:#1d1c1c; font-weight:normal; line-height:23px; }
+.bonus_list h3 { font-family:Arial; font-size:20px; color:#161616; font-weight:bold; padding:0 0 15px 14px; }
+.bonus_list ul { padding:0px; margin:0px; }
+.bonus_list li { padding:0 0 0 20px; margin:0px; list-style:none; display:block; background:url(https://static.astrologyanswers.com/secure/offers/tpg/checkout_ds2/responsive/original/images_bw/tick_green.jpg) 0 2px no-repeat; }
+.bonus_list li span { padding:0 5px 0 5px; }
+.bonus_list li span.bonus { padding:0 5px 0 5px; background-color:#ffff00; }
+
+.testimonial_sec { width:338px; float:left; position:relative; margin:0 0 0 8px; }
+.testimonial_box { width:338px; float:left; position:relative; padding:7px 0; }
+.testimonial_box1 { width:338px; float:right; position:relative; padding:7px 0; }
+.testimonial_box_topbotbg { width:338px; float:left; }
+.testimonial_box_matter_sec { width:296px; float:left; position:relative; background:url(https://static.astrologyanswers.com/secure/offers/tpg/checkout_ds2/responsive/original/images_bw/testimonial_repeatbg.png) left top repeat-y; padding:5px 12px 5px 30px; }
+.testimonial_top_quote { width:18px; position:absolute; top:5px; left:9px; height:14px; background:url(https://static.astrologyanswers.com/secure/offers/tpg/checkout_ds2/responsive/original/images_bw/top_quote.png) left top no-repeat; }
+.testimonial_bot_quote { width:18px; position:absolute; bottom:25px; right:12px; height:14px; background:url(https://static.astrologyanswers.com/secure/offers/tpg/checkout_ds2/responsive/original/images_bw/bot_quote.png) left top no-repeat; }
+.testimonial_box_matter { width:296px; float:left; font-family:Arial; font-size:12px; color:#1d1c1c; font-weight:normal; line-height:19px; position:relative; }
+.testimonial_box_matter span { font-size:12px; color:#1d1c1c; font-weight:bold; }
+.testimonial_box_matter p { padding:2px 0 10px 0; }
+
+.guarantee { width:338px; float:left; font-family:Arial; font-size:12px; color:#0060be; font-weight:normal; text-align:center; margin:15px 0 0 8px; }
+.guarantee a { color:#0060be; text-decoration:underline; }
+.guarantee img { margin:10px 0 0 0; }
+
+.live_chat { width:310px; float:left; font-family:Arial; font-size:12px; color:#1d1c1c; font-weight:bold; text-align:center; margin:15px 0 0 8px; padding-left: 26px; }
+.live_chat a { font-size:16px; color:#1d1c1c; font-weight:bold; text-decoration:none; }
+.live_chat p { margin:15px 0 0 0; }
+.live_chat img.call { margin:8px 0 -4px 0; }
+
+.order_summary_sec { width:380px; margin:30px auto 0 auto; }
+.order_summary_box { width:342px; float:left; margin:0 0 0 17px; }
+.order_summary_txt { width:342px; float:left; font-family:Arial; font-size:16px; color:#ffffff; font-weight:bold; text-align:center; background-color:#101010; line-height:35px; }
+.order_summary_box_inner { width:342px; float:left; padding:12px 0 0 0; }
+.order_summary_personal_txt { width:296px; float:left; font-family:Arial; font-size:14px; color:#1d1c1c; font-weight:bold; text-align:left; line-height:20px; padding:0 0 0 46px; }
+.order_summary_box_1 { width:336px; float:left; padding:10px 1px 10px 5px; }
+.order_summary_box_2 { width:336px; float:left; background-color:#ffe599; border:1px solid #c6c6c6; padding:9px 0 9px 4px; }
+.order_summary_radiobtn { width:40px; float:left; padding:7px 0 0 5px; }
+.order_summary_matter { width:291px; float:left; font-family:Arial; font-size:13px; color:#1d1c1c; font-weight:normal; line-height:20px; }
+.order_summary_matter span { color:#1d1c1c; font-weight:normal; text-decoration:underline; }
+.order_summary_matter span.payment { color:#1d1c1c; font-weight:bold; text-decoration:none; }
+.order_summary_matter span.discount { color:#ff0000; font-weight:bold; text-decoration:none; }
+.order_summary_start_btn { width:380px; float:left; font-family:Arial; font-size:11px; color:#616161; font-weight:normal; text-align:center; padding:25px 0; }
+.order_summary_start_btn input { margin:25px 0 0 0; }
+
+.your_order_txt { width:706px; float:left; font-family:Arial; font-size:11px; color:#353535; font-weight:normal; text-align:center; line-height:20px; }
+.your_order_txt span { font-size:12px; color:#212121; font-weight:bold; }
+
+.testimonial_sec_1 { width:692px; float:left; position:relative; padding:0 7px; margin:15px 0 0 0; }
+
+.footer { width:772px; float:left; font-family:Arial; font-size:12px; color:#191919; font-weight:normal; text-align:center; line-height:19px; padding:20px 0; }
+.footer a { color:#191919; text-decoration:none; }
+.footer a:hover { color:#191919; text-decoration:underline; }
+.footer p { text-align:left; padding:20px 12px 10px 12px; }
+
+.thank_you_txt { width:692px; float:left; font-family:Arial; font-size:20px; color:#138806; text-align:center; line-height:normal; text-transform:none; font-weight:bold; padding:0 10px; margin:15px 0 0 0; }
+
+
+
+
+#lc_invite_layer{display:none!important;}
+
+
+.progress_bar { width:728px; float:left; text-align:center; padding:9px 0; }
+.progress_bar p { font-family:Arial; font-size:14px; color:#000000; text-align:left; padding:3px 0 0 30px; }
+
+
+/********************************************( 27-03-2014 )**********************************************************/
+.body_2703 { padding:0px; margin:0px; background:#ffffff; }
+
+.wrapper_2703 { width:900px; margin:0px auto; }
+.progress_bar_2703 { text-align:center; padding:9px 0; }
+
+.top_matter_2703 { font-family:Georgia; font-size:32px; color:#548235; text-align:center; line-height:42px; font-weight:normal; padding:30px 0px; }
+.top_matter_2703 h3 { font-family:Georgia; font-size:44px; color:#548235; font-weight:bold; padding:20px 0 10px 0; }
+.top_matter_2703 p { padding:15px 0px; }
+.top_matter_2703 img { margin:-40px 25px 0 0; }
+
+.list_sec_2703 { overflow:hidden; padding:10px; }
+.list_2703 { padding:0px; }
+.list_2703 ul { margin:0px; padding:0px; }
+.list_2703 li { margin:0px; padding:15px 0 10px 50px; list-style:none; display:block; font-family:Times New Roman; font-size:22px; color:#1D1C1C; /*line-height:22px;*/ background:url(https://static.astrologyanswers.com/secure/offers/tpg/checkout_ds2/responsive/original/images_bw/tick_green.png) left top no-repeat; }
+.list_2703 li span { font-size:15px; color:#1D1C1C; font-weight:bold; }
+.list_2703 li span.yes { font-size:24px; color:#1D1C1C; font-weight:bold; line-height:normal; }
+.list_2703 li p { padding:10px 20px 0 20px; }
+
+.form_main_2703 { margin:30px 0 0 0; }
+.form_box_2703 { padding:10px 0 10px 0; }
+.form_box_2703 h3 { font-family:Verdana; font-size:14px; color:#000000; line-height:20px; font-weight:bold; padding:0 0 5px 0; }
+
+.form_field_sec_2703 {width:100%; float:left; margin:6px 0 0 0; font-size:15px}
+.form_field_sec_2703 label { width:210px; display:block; float:left; font-family:Verdana; font-size:14px; color:#222222; line-height:20px; font-weight:normal; }
+.form_field_sec_2703 input { width:200px; float:left; height:25px; line-height:25px; padding:0px; margin:0px; }
+.form_field_sec_2703 input.zip_2703 { width:100px; float:left; height:25px; line-height:25px; padding:0px; margin:0px; }
+.form_field_sec_2703 input.email_2703 { width:200px; float:left; height:25px; line-height:25px; padding:0px; margin:0px; background:#cccccc; border-bottom:1px solid #e3e9ef; border-top:1px solid #abadb3; border-left:1px solid #e2e3ea; border-right:1px solid #e2e3ea; }
+.form_field_sec_2703 input.code_2703 { width:150px; float:left; height:25px; line-height:25px; padding:0px; margin:0px; }
+.form_field_sec_2703 select { width:202px; float:left; height:28px; line-height:28px; padding:0px; margin:0px; }
+.form_field_sec_2703 select.month_2703 { width:61px; float:left; height:28px; line-height:28px; padding:0px; margin:0px; }
+.form_field_sec_2703 select.year_2703 { width:80px; float:left; height:28px; line-height:28px; padding:0px; margin:0px; }
+.form_field_sec_2703 a { float:left; font-family:Verdana; font-size:11px; color:#222222; line-height:20px; font-weight:normal; text-decoration:underline; margin:0 0 0 5px; }
+
+.currencies_txt_2703 { float:left; font-family:Verdana; font-size:11px; color:#1d1c1c; font-weight:bold; line-height:normal; margin:0 0 0 210px; }
+.currencies_txt_2703 a { color:#2677c2; text-decoration:underline; float:none; font-weight:bold; margin:0px; }
+
+.order_summary_sec_2703 { width:380px; margin:20px auto 0 auto; }
+
+.seal_secure_2703 { text-align:center; }
+.seal_secure_2703 img { margin:0 10px 10px 10px; }
+.seal_secure_2703 img.reviews { margin:0 10px 0 10px; }
+
+.seal_secure1_2703 { text-align:center; margin:15px 0 0 0; }
+.seal_secure1_2703 img { margin:0 10px 10px 10px; }
+.seal_secure1_2703 img.reviews { margin:0 10px 0 10px; }
+
+.privacy_2703 { padding:20px 0 0 0; text-align:center; font-family:Verdana; font-size:13px; color:#000000; text-align:center; line-height:normal; }
+.privacy_2703 span { color:#000000; font-weight:bold; }
+
+.form_right_sec_2703 { width:370px; float:right; position:relative; }
+.call_us_2703 { font-family:Verdana; font-size:14px; color:#000000; text-align:center; padding:10px 0; }
+.live_chat_2703 { font-family:Arial; font-size:12px; color:#1d1c1c; font-weight:bold; text-align:center; margin:15px 0 0 0; }
+
+.testimonial_sec_2703 { position:relative; margin:10px 0 0 0; }
+.testimonial_sec1_2703 { position:relative; margin:25px 0 0 0; }
+.testimonial_box_2703 { position:relative; }
+.testimonial_topbot_2703 { padding:0px; }
+.testimonial_main_2703 { position:relative; background:url(https://static.astrologyanswers.com/secure/offers/tpg/checkout_ds2/responsive/original/images_bw/quotebox_repeat_2703.png) left top repeat-y; padding:15px 50px; }
+.testimonial_matter_2703 { font-family:Georgia; color:#000000; font-size:14px; line-height:20px; font-weight:normal; }
+.testimonial_matter_2703 span { color:#000000; font-weight:bold; }
+.testimonial_matter_2703 p { padding:5px 0; }
+.testimonial_quote_top_2703 { font-family:"Trebuchet MS"; font-size:100px; color:#DD0000; line-height:80px; position:absolute; top:-25px; left:0px; }
+.testimonial_quote_bot_2703 { font-family:"Trebuchet MS"; font-size:100px; color:#DD0000; line-height:80px; position:absolute; bottom:15px; right:0px; }
+
+.guarantee_matter_2803 { font-family:Arial; font-size:15px; color:#1d1c1c; text-align:left; font-weight:normal; line-height:22px; margin:30px 0 0 0; }
+.guarantee_matter_2803 h3 { font-family:Georgia, "Times New Roman", Times, serif; font-size:20px; color:#000000; font-weight:bold; line-height:normal; margin:10px 0 0 0; }
+.guarantee_matter_2803 h5 { font-family:Arial; font-size:22px; color:#000000; font-weight:bold; line-height:26px; padding:10px 0 20px 0; }
+.guarantee_matter_2803 h5 span { font-family:Arial; font-size:16px; color:#000000; font-weight:normal; }
+.guarantee_matter_2803 p { padding:12px 0; }
+
+.middle_sec_2803 { padding:10px; position:relative; margin:0px 0 0 0; }
+.middle_left_2803 { width:480px; float:left; padding:0 10px; }
+.middle_right_2803 { width:370px; float:right; position:relative; }
+.guide_book_2703 { text-align:center; margin:10px 0 0 0; }
+
+.satisfaction_guarantee_2703 { text-align:center; }
+
+.order_summary_inner_2803 {
+	float: left;
+}
+.order_summary_inner_2803 h6 { font-family:Arial; font-size:14px; color:#222222; font-weight:bold; text-align:left; padding:10px 0 5px 0; }
+.order_summary_box1_2803 { width:390px; float:left; background-color:#ffffff; padding:10px; }
+.order_summary_box2_2803 { width:390px; float:left; background-color:#FFE599; border:1px solid #C6C6C6; padding:9px; }
+.order_summary_inner_2803 .radiobtn { width:20px; float:left; text-align:left; padding:10px 0 0 0; }
+.order_summary_inner_2803 .radiomatter { width:350px; float:left; text-align:left; font-family:Verdana; font-size:14px; color:#222222; line-height:20px; }
+.order_summary_inner_2803 span.discount { font-size:14px; color:#FF0000; font-weight:bold; }
+.order_summary_inner_2803 span.payment { font-size:14px; color:#222222; font-weight:bold; }
+.order_summary_start_btn_2803 { font-family:Arial; font-size:11px; color:#000; font-weight:normal; text-align:left; padding:15px 0; }
+.order_summary_start_btn_2803 input { margin:25px 0 0 0; max-width: 100% !important}
+
+.footer_2803 { font-family:Arial; font-size:12px; color:#191919; font-weight:normal; text-align:center; line-height:19px; padding:20px 0; }
+.footer_2803 a { color:#191919; text-decoration:none; }
+.footer_2803 a:hover { color:#191919; text-decoration:underline; }
+.footer_2803 p { text-align:left; padding:20px 20px 10px 20px; }
+.ongoing {
+	clear: both;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border-radius: 5px;
+	border: 1px solid #ded2a1;
+	line-height: normal;
+	text-align: left;
+	background: #F7F2E1;
+	margin-top: 10px;
+	margin-right: 0;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	width: 460px;
+	padding: 10px;
+}
+.ongoing:hover {
+	clear: both;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border-radius: 5px;
+	border: 1px solid #ded2a1;
+	line-height: normal;
+	text-align: left;
+	background: #c0f4e7;
+	margin-top: 10px;
+	margin-right: 0;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+.ongoing p {line-height:16px; margin:0px; padding:5px 0; text-align:center; font-size:14px }
+.ongoing input { margin:0 5px 0 0; }
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.4); /* IE */
+  -moz-transform: scale(1.4); /* FF */
+  -webkit-transform: scale(1.4); /* Safari and Chrome */
+  -o-transform: scale(1.4); /* Opera */
+  padding: 5px;
+}
+.from{width:455px;margin-left:9px}
+.clrmo{ clear:both;height:3px}
+
+input.check { margin:20px 8px 0 0; padding:0px; }
+
+/*new css 120215*/
+.caps1{text-transform:uppercase; text-decoration:underline;}
+
+.box{width:704px; margin:0 auto;  position:relative; left:-2px; }
+.box_corner{width:704px; float:left;}
+.box_bg{/*width:620px;*/ background:url(https://static.astrologyanswers.com/secure/offers/tpg/checkout_ds2/responsive/original/images_bw/box_bg.jpg) repeat-y 0 0; padding:0px 42px 18px 42px; float:left;}
+.box_bg.one{/*width:620px;*/ background:url(https://static.astrologyanswers.com/secure/offers/tpg/checkout_ds2/responsive/original/images_bw/box_bg1.jpg) repeat-y 0 0; padding:18px 42px; float:left;}
+.box_bg h1{ font-size:45px; text-align:center; font-weight:normal; font-style:italic; color:#1e1e1e; font-family:Georgia, "Times New Roman", Times, serif; line-height:70px; margin:0px;}
+.box_bg h1.work{ font-size:39px; text-align:center; font-weight:normal; font-style: normal;}
+.box_bg h3{ font-size:24px; text-align: left; font-weight: bold; color:#141414; font-family:Georgia, "Times New Roman", Times, serif; padding-top:10px;}
+.box_bg h3 img{ margin:-10px 10px 0 0;}
+.box_bg h3.center{text-align: center;}
+.box_bg h4{ font-size:24px; text-align:left;  color:#141414; font-family:Georgia, "Times New Roman", Times, serif; padding-top:30px; margin:0px; font-weight:normal;}
+.box_bg .bonus{ margin:20px 20px 0 15px;}
+.box_bg p{font-family:Georgia, "Times New Roman", Times, serif; font-size:19px; color:#141414; line-height:26px; padding:10px 20px 0 20px;}
+.box_bg p.book{font-family:Georgia, "Times New Roman", Times, serif; font-size:17px; color:#141414; line-height:26px; padding:26px 20px 0 20px; margin:0px;}
+.box_bg p.first{font-family:Courier, monospace; font-size:17px; color:#0a0a0a; line-height:22px; padding:0px;}
+.box_bg p.first .katherine{ margin:0 15px 58px 0;}
+.box_bg p.first .katherine_seal{ margin:-50px 0 0 0;}
+.box_bg p.coverd{font-family:Georgia, "Times New Roman", Times, serif; font-size:15px; color:#0a0a0a; line-height:29px; font-style:italic; padding:0px;}
+.box_bg p.coverd .katherine{ margin:-10px 0 0px 15px;}
+.box_bg p.coverd1{font-family:Georgia, "Times New Roman", Times, serif; font-size:11px; margin:0px; text-transform:uppercase; color:#0a0a0a; line-height:29px; font-style: normal; padding:0px; clear:both;}
+.box_bg p.coverd2{font-family:Georgia, "Times New Roman", Times, serif; font-size:16px; margin:0px; text-transform:uppercase; color:#0a0a0a; line-height:29px; font-style: normal; padding:0px; clear:both; text-align:center;}
+.box_bg p.coverd2 span{ text-transform:none;}
+.box_bg p.coverd2 img{ margin:0 7px;}
+.box_bg p.bonus_price{font-family:Georgia, "Times New Roman", Times, serif; font-size:22px; color:#141414; line-height:26px; padding:10px 20px 0 20px; text-align:right; margin:0px;}
+.box_bg p.bonus_price span{ text-decoration:line-through;}
+
+.recText {margin:0 auto; max-width:96%; text-align:justify; margin-top:25px;}
+.recText p{padding:8px 0;color: #141414;
+    font-family:Times New Roman;
+    font-size: 22px;
+    /*line-height: 26px;*/
+    }
+.uline{text-decoration:underline;}
+.recText h2{
+color: #000000;
+    font-family: Georgia;
+    font-size: 29px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+.discountImg{
+	width:auto;
+	margin:-50px -40px -35px 0;
+	float:right;
+	position:relative;
+	z-index:9999;
+}
+.discountImg img{
+	width:100px;
+}
+
+
+
+#box_300812 {
+    background-color: #f6f9f9;
+    border: 5px solid #ff0000;
+    color: #000000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    left: 50%;
+    margin-left: -309px;
+    padding: 20px 15px;
+    position: absolute;
+    top: 30px;
+    width: 578px;
+    z-index: 999;
+}
+#box_300812 p {
+    margin-top: 10px;
+}
+#discount {
+    display: none;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 17px;
+    z-index: 100000;
+}
+.LockOff {
+    display: none;
+    visibility: hidden;
+}
+.LockOn {
+    background-color: #000;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.85;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    visibility: visible;
+    width: 100%;
+    z-index: 998;
+}
+.continue_link {
+    color: #0b43fb;
+    font-size: 17px;
+     line-height: 32px;
+}
+
+.product p {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.final_discount{  background: #f3003c;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 8px;-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);}
+
+
+.start{font-size:13px; margin-top:10px; color:#000000; font-weight:bold;}
+.middle_sec_2803{ margin:0px}
+.guarantee_matter_2803{ margin:0px}
+.order_detailne{ font-size:14px;font-family:Verdana; background-color:#fff9d4; padding:15px 20px}
+.order_detailne h1{ color:#000; font-size:14px; margin-bottom:20px}
+.order_detailne .text_left1{ width:60%; float:left; margin-bottom:10px; padding-left:15px;}
+.order_detailne .text_left{ width:30%; float:left; margin-bottom:10px; margin-left:3%; text-align:right}
+.order_summary_start_btn_2803 input {margin: 5px 0 0;}
+.order_detailne hr{border-color:#000}
+.red{color:#ff0000}
+.satis{font-family:Verdana; margin-top:20px}
+.satis h1{font-size:14px;font-family:Verdana; margin-bottom:10px }
+.satis p{ font-size:14px}
+.form_box_new{padding-top:0px;}
+.bold_txt{font-weight:bold;}
+.arw{background:url(https://static.astrologyanswers.com/secure/offers/tpg/checkout_ds2/responsive/original/images_bw/arrow.png) 0 4px no-repeat;}
+
+
+/*************/
+/*Responsive*/
+/*************/
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+.wrapper_2703 { width: 96% }
+.top_matter_2703 { float: none; margin: 0 25px }
+.middle_left_2803 { float: left; width: 50% }
+.product_1_0804 { border: 1px solid #d0dffc; width: auto; margin: 20px 25% }
+.product_2_0804 { width: auto; margin: 20px 25%;}
+.product_2_0804 .dest_deal { position: absolute; right: 205px;    top: 1335px; width: 120px; }
+.middle_right_2803 { width: 45%; float: right }
+.testimonial_topbot_2703 img { width: 100%; }
+.testimonial_main_2703 { background-size: contain }
+.form_field_sec_2703 label{width:48%}
+.form_field_sec_2703 input { width:50%; }
+.form_field_sec_2703 input.email_2703 { width:50%; }
+.form_field_sec_2703 select { width:50%; }
+.currencies_txt_2703 { margin:0 0 0 48%; }
+.form_field_sec_2703 a { margin:0 0 0 48%; }
+
+.product_1_0804{width:32% !important;}
+.product_2_0804{width:33% !important;margin:0}
+.pay_sec { display:block; float:left; padding:0px; width:75%; }
+
+.product_check_sec_0804 span{font-size:18; line-height:normal;}
+.product_inner_0804 h5{font-size:36; line-height:normal;}
+.h_height{padding-top:43px;}
+
+.order_summary_start_btn_2803 .middle_left_2803{width:100%;}
+.discountImg{margin:-50px 0 -35px;}
+}
+ @media (max-width: 767px) {
+ .top_matter_2703{text-align:center;}
+ .top_matter_2703 img{float:none;}
+ .form_field_sec_2703 label{width:100%}
+.wrapper_2703 { width: 100% }
+.top_matter_2703 { float: none }
+.product_1_0804 { float: none; }
+.middle_left_2803 { width:100%; padding:0 5%; }
+.middle_right_2803 { width: 370px; clear:both; margin:0 auto; float:none; position:relative; padding:30px 0 0 0; }
+.testimonial_topbot_2703 img { width: 100%; }
+.testimonial_main_2703 { background-size: contain }
+.form_field_sec_2703 input, .form_field_sec_2703 input.email_2703, .form_field_sec_2703 select {width:95%;}
+.middle_sec_2803 { padding:10px 0; }
+.top_matter_2703 img { display:block; margin:10px auto; float:none; }
+.pay_sec { display:block; float:left; padding:0px; width:70%; }
+.currencies_txt_2703 { margin:0px; }
+.product_top_0804 p strong{font-size:16px;}
+.h_height{padding-top:43px ;}
+/*.product_1_0804 { height:auto !important; }*/
+.order_summary_inner_2803 .radiobtn{width:30px;}
+.order_summary_inner_2803 .radiomatter{width:230px;}
+.order_summary_box2_2803, .order_summary_box1_2803{width:94%;}
+
+
+img.katherine_seal{max-width: 50%}
+.hide_xs, .testimonial_sec1_2703{display: none}
+.faq{margin-left: 10px; margin-right: 10px}
+.box_bg p.book{font-size: 15px; line-height: 150%}
+
+#box_300812 {
+    margin-left: -220px;
+    position: absolute;
+    width: 400px;
+}
+.box {
+    float: none;
+    left: 0;
+    position: relative;
+    width: auto;
+}
+.box_corner {
+    float: none;
+    width: auto;
+}
+
+.box_bg.one {
+     float: none;
+    padding: 18px 14px;
+    width: auto;
+}
+
+.box_bg h1 {  float: none;}
+.box_bg p.first {
+    color: #0a0a0a;
+    font-family: Courier,monospace;
+    font-size: 17px;
+    line-height: 22px;
+    padding: 0;
+}
+
+.box_corner {
+    float: none;
+    width: auto;
+	display:none
+}
+
+.box {
+    float: none;
+    left: 0;
+    position: relative;
+    width: auto;
+}
+
+.box_bg {
+    background:none;
+    float: left;
+    padding: 0 3px 10px;
+    width: auto;
+}
+
+.testimonial_sec {
+    float: none;
+    width: auto;
+	
+}
+
+.testimonial_box {
+    background: none repeat scroll 0 0 #eeeeee;
+    border-radius: 10px;
+    float: left;
+    margin-top: 40px;
+    padding: 3%;
+    width:auto;
+}
+
+.testimonial_box .pic {
+    float: none;
+    padding-top: 8px;
+    text-align: center;
+    width: 100%;
+}
+.testimonial_box .txt {
+    color: #141414;
+    float: none;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 20px;
+    text-align: left;
+    width: auto;
+}
+
+.claim_box {
+      color: #002fa8;
+    height: 126px;
+    margin: 0 auto;
+    width: 100%;
+	background-size:100%;
+	padding:8px 0px;
+	font-size:24px
+}
+
+
+.k_signature {
+    float: none;
+    margin-left: 7px;
+    margin-top: -30px;
+}
+
+.claim_box1 {
+      color: #002fa8;
+    float: none;
+    font-family: arial;
+    height: 114px;
+    text-align: center;
+    width: 100%;
+	background-size:100%
+}
+
+.footer {
+    color: #191919;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    margin: auto;
+    padding-top: 30px;
+    text-align: center;
+    width: 95%;
+}
+.box_bg.one { background:none}
+
+.user_matter img.niki {
+    float: none;
+    margin: 17px;
+}
+.testimonial_sec {
+    float: none;
+    margin: 0 auto;
+    width: 95%;
+}
+#box_300812 {
+    left: 0;
+    margin-left: 0;
+    padding: 20px 15px;
+    position: absolute;
+    top: 30px;
+    width: auto;
+    z-index: 999;
+}
+.box_bg p.first .katherine {  margin: 0 15px 58px 0;
+    text-align: center;
+    width: 93%;}
+	
+.main_contant {
+    clear: both;
+    color: #141414;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    padding: 0 16px;
+}
+.main_contant h1 {
+    font-size: 31px;
+   }
+
+.box_bg h4 {font-size: 20px;}
+.box_bg p.bonus_price { font-size: 15px; text-align: left}
+.claim_box {
+    background-size: 100% auto;
+    color: #002fa8;
+    font-size: 18px;
+    height: 98px;
+    margin: 0 auto;
+    padding: 8px 9px;
+    width: 86%;
+}
+.claim_box1 {
+    background-size: 100% auto;
+    color: #002fa8;
+    float: none;
+    font-family: arial;
+    height: 105px;
+    margin: 14px auto 0;
+    padding: 8px 4px;
+    text-align: center;
+    width: 92%;
+}
+.box_bg h1 {
+    color: #1e1e1e;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 33px;
+    font-style: italic;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+}
+.continue_btn {
+    margin-top: 10px;
+    padding: 20px 11px 0;
+    text-align: center;
+}
+.main_contant {
+    clear: both;
+    color: #141414;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    padding: 0 5px;
+}
+.wrapper_080415{
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #000000;
+    margin: auto;
+    padding: 7px 2px;
+    width: 95%;
+}
+.box_bg h1 img{width:100%;}
+}
+@media (max-width: 640px) {
+	
+.product_offer_0804 { padding: 0 10px; }
+.product_check_0804 input { float: none; margin: 0; }
+.wrapper_2703 { width: 96% }
+.top_matter_2703 { float: none;}
+.middle_main_21414 { margin: 0 20px; }
+.testimonial_sec_2703 { width: 100% }
+.testimonial_main_2703 { width: auto; margin: 0; background-size: contain }
+.order_summary_start_btn_2803 { width: 100% }
+.testimonial_topbot_2703 img { width: 100% }
+.order_summary_start_btn_2803 input { max-width: 100%; }
+.product_2_0804 { width: auto; /*margin: 50px 0 0 0;*/ float:none }
+
+.product_1_0804 { float: none; width: 100%; }
+.product_check_0804 label { float: none }
+.product_2_0804 .dest_deal {position: absolute; right: 0; top: 1280px; width: 120px; }
+
+/*.form_field_sec_2703 { width: auto }*/
+.form_field_sec_2703 label { width: 100% }
+.form_field_sec_2703 input.zip_2703 { width: auto }
+.product_1_0804 { border-right: 1px solid #d0dffc; }
+.product_check_0804 { padding: 0 10px }
+.product_inner_0804 h5 { line-height: normal; }
+.product_check_0804 label { padding: 0; text-align: left; }
+.product_check_0804 { text-align:center; }
+.product_check_0804 input { width:20px; float:none !important; margin:0px auto !important; }
+.pay_sec { display:block; float:left; padding:0px; width:90%; padding:0 5%; clear:both; }
+
+.discountImg img{width:65px;}
+.discountImg{width: -21px -37px -17px 0}
+.order_summary_inner_2803 .radiobtn{width:20px;}
+.order_summary_inner_2803 .radiomatter{width:205px; float:left;}
+.order_summary_box2_2803, .order_summary_box1_2803{width:100%;}
+}
+@media (max-width: 480px) {
+.top_matter_2703 h3{font-size:33px;}
+.middle_right_2803 { width:100%; max-width:370px; margin:0 auto; clear:both; padding:30px 0 0 0; }
+.list_2703 li p { padding:10px 10px 0; }
+.product_top_0804 p strong{font-size:11px;}
+.h_height{padding-top:22px !important;}
+#box_300812 {
+    left: 0;
+    margin: 0 15px;
+    position: absolute;
+    width: auto;
+}
+
+.recText h2, .top_matter_2703{font-size:22px; line-height:normal;}
+.recText p, .list_2703 li{font-size:18px;}
+.list_2703 li{background: url("https://static.astrologyanswers.com/secure/offers/tpg/checkout_ds2/responsive/original/images_bw/tick_green1.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+padding:0 0 0 25px;}
+
+.discountImg{margin:00px -18px -35px 0;}
+}

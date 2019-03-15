@@ -1,0 +1,92 @@
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="{% static "images/favicon.ico" %}">
+        <title>Elysia Medium | {% block title %}{% endblock %}</title>
+        <link href="{% static "style/foundation.css" %}" rel="stylesheet">
+        <link href="{% static "style/www.css" %}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Tangerine" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="https://js.stripe.com/v3/"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.js"></script>
+	    <script>var stripe = Stripe('pk_live_LMTFDMBmU9jG8jexxH92xSMg');</script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82494651-10"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-82494651-10');
+        </script>
+        {% if request.path == "/product/checkout/" %}
+            <!--Start of Tawk.to Script-->
+            <script type="text/javascript">
+                var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+                (function(){
+                    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                    s1.async=true;
+                    s1.src='https://embed.tawk.to/5c5865dc6cb1ff3c14cb1224/default';
+                    s1.charset='UTF-8';
+                    s1.setAttribute('crossorigin','*');
+                    s0.parentNode.insertBefore(s1,s0);
+                })();
+            </script>
+            <!--End of Tawk.to Script-->
+            <!-- Hotjar Tracking Code for elysia-medium.com -->
+            <script>
+                (function(h,o,t,j,a,r){
+                    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                    h._hjSettings={hjid:1227127,hjsv:6};
+                    a=o.getElementsByTagName('head')[0];
+                    r=o.createElement('script');r.async=1;
+                    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                    a.appendChild(r);
+                })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+            </script>
+        {% endif %}
+    </head>
+    <body class="productBody">
+        <header>
+            <div class="wrap">
+                <div class="grid-x headertop">
+                    <div class="cell large-3 medium-4">
+                        <img class="salesElysia" src="{% static "images/elysia2_headshot_large.png" %}" alt="Elysia">
+                    </div>
+                    <div class="cell large-6 medium-6">
+                        <img class="salesLogo" src="{% static "images/AN_logo_EN2.png" %}" alt="Logo">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="pageContent productPage">
+            <div class="wrap">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+        <footer id="footermain">
+            <div class="wrap">
+                <div class="grid-x privacylegal">
+                    <div class="cell">
+                        <ul>
+                            <li class="firstlink"><a href="/privacy">Privacy Policy</a></li>
+                            <li><a href="/terms">Legal Terms</a></li>
+                        </ul>
+                        <p>www.elysia-medium.com belongs to and is managed by SL Digital</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

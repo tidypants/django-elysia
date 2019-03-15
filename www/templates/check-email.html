@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="{% static "images/favicon.ico" %}">
+    <title>Elysia Medium | Free Reading</title>
+    <link href="{% static "style/foundation.css" %}" rel="stylesheet">
+    <link href="{% static "style/www.css" %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Tangerine" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82494651-10"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-82494651-10');
+    </script>
+</head>
+<body>
+    <div class="thin-signup">
+        <div class="wrap">
+            <section class="thin-signup__header">
+                <img src="/static/images/elysiaheader.png">
+            </section>
+            <section class="thin-signup__form">
+                <span class="who-guardian">Who is your Guardian Angel?</span>
+                <span class="free-reading">ASK FOR YOUR FREE READING</span>
+                <div class="thin-signup__form-box">
+                    <span class="check-email-title">Thanks for your confidence!</span>
+                    <span class="check-email-subtitle">I have just sent you your free gift by email.</span>
+                    <span class="check-email-subtitle">Quickly go to your inbox in order to discover the orison and the secret word of invocation that will enable you to contact your guardian angel.</span>
+                </div>
+                <span class="hundred-free">100% free and confidential</span>
+            </section>
+            <section class="thin-signup__guardian">
+                <h3>Who is your Guardian Angel?</h3>
+                <p>What <strong>Secret</strong> does he want to reveal for <strong>your Future</strong>?</p>
+                <p>Who other than your <strong>Guardian Angel</strong> can best guide you on the Path to Happiness?<br>You will certainly not find any better ally for that!<br>Do you at least know <strong>the Name of your Angel</strong>?</p>
+                <p>Thanks to the privileged connection I have with the Celestial World, I can unveil its Name to you as well as <strong>the Angelical Message</strong> he has to reveal.</p>
+                <p>One thing is certain: your life will never be the same after <strong>this Revelation</strong>.</p>
+                <p>Discover the Name of your Angel +  His Message, it’s FREE</p>
+            </section>
+            <section class="thin-signup__footer">
+                <div class="privacylegal">
+                    <ul>
+                        <li class="firstlink"><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms">Legal Terms</a></li>
+                    </ul>
+                    <p>www.elysia-medium.com belongs to and is managed by SL Digital</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <img src="https://vaction-pharepper.com/postback?cid={{ cid }}" width="1" height="1">
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1033777916753166');
+        fbq('track', 'Lead');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=1033777916753166&ev=Lead&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+</body>
+</html>

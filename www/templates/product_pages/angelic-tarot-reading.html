@@ -1,0 +1,439 @@
+{% extends "product_pages/base-product.html" %}
+{% load static %}
+{% block title %}Angelical Tarot Drawing of Active Faith{% endblock %}
+{% block content %}
+    <div class="grid-x">
+        <div class="cell large-9">
+            <div class="sales-content">
+                <h1 class="sales-title">“{{ account.first_name }}, here is what the Angels have told me after I read the angelic tarot for you:</h1>
+                <h1 class="sales-title"><em>“Money, love, and success will flow in {{ account.first_name }}‘s life”</em></h1>
+                <span>Hello {{ account.first_name }},</span>
+                <span>{{ account.first_name }}, I have drawn 12 angelic arcana for you, 12 cards, <strong>12 Angels that will stand by your side in the months to come</strong>. Each Angel has a specific power. I needed a lot of concentration to analyze what it means for you, and write down the following advice accordingly. But as you will see, it was worth it!</span>
+                <span><span style="font-size: 18pt;">A future filled with promises of love and money</span></span>
+                <span>You will find all your predictions in this message, month by month, as promised. You have seen it written above: Love, money, and success will flow in your life! But first, I need to give you some advice:</span>
+                <span><strong>Yes, I am asking you to read this message from top to bottom, with all the affection I have for you. Why?</strong></span>
+                <span>Well, simply because after I had drawn your last tarot card, the Angels did not break the connection and {{ guardian_angel }}, your personal Angel, spoke to me again to entrust me with an additional message for you! This is a very important message if you want everything written below to unfold as planned.</span>
+                <span>But I can imagine how impatient you must be, so let’s move on to your discovery of the meaning of the 12 Angelic Tarot Cards that will guide you for the next 12 months.</span>
+                <span><span style="font-size: 18pt;">Here is Your Reading with the Angelic Tarot:</span></span>
+                <span style="text-align: center;">{{ dates.0 }}</span>
+                <div>
+                    <span><strong>The Angel that will guide you is: Damabiah</strong></span>
+                    <span><strong>This Angel symbolizes success and swift decision-making</strong></span>
+                    <span><img src="/static/images/65-damabiah.png" class="angelCard" width="230"></span>
+                    <h3>My interpretation:</h3>
+                    <span>Damabiah breathes the energy of the Spiritual Forces into you, to help you succeed in whatever you undertake. However, if you want to meet your objectives and see your wishes come true, you must have clear notions about what you want and broadcast suitable positive thoughts. That is the best way to take advantage of the angelical energies.</span>
+                    <span>Know how to be a leader, but avoid becoming a dictator, acting unfairly and exploiting others. Command respect, not fear or hatred by acting arbitrarily or by showing favoritism towards some.</span>
+                    <h3>Damabiah’s message to you:</h3>
+                    <span><em>“This month, my presence at your side will create conditions that are favorable for your fulfilment and the implementation of your projects. If you regularly call on me so I come to your rescue, I will help you clarify your thoughts and make the right decisions. You will have to get out of your shell, not withdraw within yourself and take charge of things when you have the opportunity while you incite people to help you in a way that is not forced but voluntary.</em></span>
+                    <span><em>I recommend that you commit body and soul to your projects for improving your financial situation.</em></span>
+                    <span><em>I will ensure that you have numerous opportunities to enjoy good luck; I will clear your path of obstacles if you try to take full advantage of the opportunities that are bound to come your way in droves.</em></span>
+                    <span><em>If you show yourself to be optimistic, whatever your current sentimental situation might be, the clouds that darken your sky in matters of the heart will vanish under my influence, and your initiatives will prove successful.”</em></span>
+                </div>
+                <span style="text-align: center;">{{ dates.1 }}</span>
+                <div>
+                    <span><strong>The Angel that will guide you is: Haiaiel</strong></span>
+                    <span><strong>This Angel allows you to attain peace of mind and makes your life easier</strong></span>
+                    <span><img src="/static/images/71-haiaiel.png" class="angelCard" width="230"></span>
+                    <h3>My interpretation:</h3>
+                    <span>You will be able to set clear objectives for the coming months – or even years – and to develop projects that are likely not only to help you progress but also to make the lives of others around you a bit easier.</span>
+                    <span>Focus on acquiring new knowledge, on exploring new paths, or on pursuing those you already know.</span>
+                    <span>If you want to improve your life, furthering your understanding of what you already know or acquiring new knowledge will be your best option.</span>
+                    <span>Do not be content with your current ideas; see things in a new light. Otherwise, your progress toward your objectives will be very slow.</span>
+                    <h3>Haiaiel’s message to you:</h3>
+                    <span><em>“I believe you should change some of your current ideas if you want to improve your life. Over this month, review your projects. Try to solve all your problems because you will go through favorable circumstances to overcome them.</em></span>
+                    <span><em>Do not be content with just knowing what you know. Try to discover new ways of living because this attitude will be crucial to your evolution. Abundance will enter your life if you regularly seek to get richer and adopt a positive frame of mind and clear goals.</em></span>
+                    <span><em>Explore new paths to material security and the means to attain it. Try your hand at something new, and have no fear: I will be there to help you.</em></span>
+                    <span><em>Analyze what you have done so far to have greater luck. Correct your past mistakes as soon as possible, and you may then enjoy the favor of Lady Luck, who will make your life much easier.</em></span>
+                    <span><em>The search for innovation and the element of surprise will be your best assets in this area.”</em></span>
+                </div>
+                <span style="text-align: center;">{{ dates.2 }}</span>
+                <div>
+                    <span><strong>The Angel that will guide you is: Mitzrael</strong></span>
+                    <span><strong>This Angel symbolizes the materialization of celestial energy</strong></span>
+                    <span><img src="/static/images/60-mitzrael.png" class="angelCard" width="230"></span>
+                    <h3>My interpretation:</h3>
+                    <span>The presence of Mitzrael assures you that you will enjoy his protection if your intentions are positive and if you show respect and compassion for all human beings, even those who have done you wrong.</span>
+                    <span>Under these conditions, you can rely on Mitzrael to make all your dreams come true, so long as you act accordingly and commit fully to the goals you want to attain. In this case, you will enjoy the benefits of his assistance.</span>
+                    <span>If you do not follow Mitzrael’s advice, expect to experience a difficult period, one plagued by money problems and complications in all your attempts to improve your life in whatever manner you may choose.</span>
+                    <h3>Mitzrael’s message to you:</h3>
+                    <span><em>“Do not let other people’s problems worry you. You must first of all solve your own problems before trying to help third parties. Once you have begun to solve your money problems, you will have to help some of your loved ones.</em></span>
+                    <span><em>This generous attitude will help you maintain a current of luck flowing, one that will keep amplifying in the coming months. As long as you firmly believe in my powers, I will help you make your dreams come true. I will be your best ally.</em></span>
+                    <span><em>I will help you bring your plans for enrichment and the acquisition of material goods to fruitful completion, far exceeding your own expectations, sometimes in a most surprising and unexpected manner.</em></span>
+                    <span><em>I assure you that you will enjoy considerable good luck if you know how to remain in harmony with the laws of the universe and with the angelical vibrations. To do so, follow my recommendations.</em></span>
+                    <span><em>If your intentions for the person you feel attracted to are serious, expect beautiful surprises in matters of the heart. If you can respect and give this person your heartfelt attention, the coming weeks could turn out to be some of the most important ones in your love life.”</em></span>
+                </div>
+                <span style="text-align: center;">{{ dates.3 }}</span>
+                <div>
+                    <span><strong>The Angel that will guide you is: Imamiah</strong></span>
+                    <span><strong>This Angel facilitates life changes and accelerates enrichment</strong></span>
+                    <span><img src="/static/images/52-imamiah.png" class="angelCard" width="230"></span>
+                    <h3>My interpretation:</h3>
+                    <span>If you keep a positive frame of mind, even when you will be faced with trials, the path to your growth will be greatly cleared. This also requires that you change certain things about your current way of life and of thinking, and that you correct whatever does not work.</span>
+                    <span>The presence of Imamiah at your side protects you from inferior minds and from the spells that might be cast against you. It keeps you safe from misfortune.</span>
+                    <span>If you do not follow Imamiah’s advice, you may end up expanding much energy in vain, never attaining the results you hope for, their achievement being greatly delayed, if not actually rendered impossible.</span>
+                    <h3>Imamiah’s message to you:</h3>
+                    <span>_“You have every chance of implementing one of the projects that are dear to your heart because it is crucial for your personal fulfilment. Do not be content with always reproducing your current life. Take the necessary measures to change your present. _</span>
+                    <span><em>Remain open-minded because many opportunities to modify your current beliefs will come your way. Some of them are opposed to the improvement of your living conditions. You will imperatively have to change them in the coming weeks if you want to get richer and experience great emotional happiness.</em></span>
+                    <span><em>Be ever on the alert, because opportunities to enrich yourself will sometimes appear when least you expect them, and in an unusual manner.</em></span>
+                    <span><em>Whatever happens, you must keep a positive frame of mind, so that my protection may shield you.</em></span>
+                    <span><em>I will be there for you, particularly if you wish to have a family, children, or to strengthen your family ties.”</em></span>
+                </div>
+                <span style="text-align: center;">{{ dates.4 }}</span>
+                <div>
+                    <span><strong>The Angel that will guide you is: Aladiah</strong></span>
+                    <span><strong>This Angel symbolizes redemption and acumen</strong></span>
+                    <span><img src="/static/images/10-aladiah.png" alt="drawing" class="angelCard" width="230"></span>
+                    <h3>My interpretation:</h3>
+                    <span>The presence of Aladiah at your side allows you to better understand the world around you and to make the right decisions knowingly. Calling upon him regularly will develop your intuition and your perceptive vision. The latter is the ability to better understand what is happening around you by overcoming the barriers of prejudices and bad experiences.</span>
+                    <span>These sometimes paralyze you and lead you to hesitate precisely when you should be forging ahead. Calling on Aladiah tears down the veil of appearances.</span>
+                    <span>Be careful not to find yourself in spiritual dead ends or to listen to false friends and people who seek only to steal your soul, your money, or both.</span>
+                    <h3>Aladiah’s message to you:</h3>
+                    <span><em>“Invoking me, your Guardian Angel for this month, on a regular basis will help you attract the vibrations of luck in a lasting fashion. Be wary of your preconceived ideas. Some of them might prevent you from making the most of opportunities meant to help you get richer and live your love life in the harmony you are looking for. Learn from your failures and do not let your emotions take over. They would only get you confused and prevent you from making the right decisions. Believe more in yourself.</em></span>
+                    <span><em>Imagine money not merely in its material sense but also as one of the many forms of celestial energy.</em></span>
+                    <span><em>Set yourself goals for your inner enrichment, and external wealth will follow. Money is a kind of energy you must attract with suitable thoughts.</em></span>
+                    <span><em>I represent Absolute Love. The more authentic the love you bear for the person who interests you is, the more sincere your intentions towards this person are, and the more I will help you, because one of my missions is to foster Supreme Love. Call on me before any sentimental attempt, which I will then favor.”</em></span>
+                </div>
+                <span style="text-align: center;">{{ dates.5 }}</span>
+                <div>
+                    <span><strong>The Angel that will guide you is: Yezalel</strong></span>
+                    <span><strong>This Angel invites you to be patient and to strive steadfastly</strong></span>
+                    <span><img src="/static/images/13-yezalel.png" alt="drawing" class="angelCard" width="230"></span>
+                    <h3>My interpretation:</h3>
+                    <span>You hold within you unlimited abilities. Your only limits are those set by your own mind. If you believe you have limitations, your mind will believe this as well and will therefore offer you only limited solutions. On the other hand, if you convince yourself that your mind knows no limits, it will grant you access to all of your inner power. To this end, with Yezalel’s help, you must broadcast positive thoughts of self-confidence regularly to place your mind at your service and focus it on the positive path to your evolution.</span>
+                    <span>Make sure not to allow yourself to be caught in a vicious circle of abject compliance that would leave you permanently dissatisfied.</span>
+                    <h3>Yezalel’s message to you:</h3>
+                    <span><em>“You should have more faith in yourself. Visualize your main dream of the moment on a regular basis, whether it concerns your enrichment, your love life, attracting luck or making a wish come true. When you visualize things, imagine that your dream is being fulfilled in a realistic fashion. Visualize it as if you were actually living it.</em></span>
+                    <span><em>You can thank me in anticipation for having helped you make your dream come true. If you manage to remain in this state of mind and visualize the realization of your wish on a regular basis with gratitude towards me, there is no doubt it will quickly materialize in your life.</em></span>
+                    <span><em>Simulate your intelligence by looking for new financial strategies and the most likely solutions to make more money.</em></span>
+                    <span><em>To have an exact image of your personality and your real abilities, call on me and I will give then you a clear vision of how you can attract good luck.</em></span>
+                    <span><em>Ask me those questions that worry you about your sentimental future, and really listen to my answers to know whether they correspond to your deepest aspirations.”</em></span>
+                </div>
+                <span style="text-align: center;">{{ dates.6 }}</span>
+                <div>
+                    <span><strong>The Angel that will guide you is: Jabamiah</strong></span>
+                    <span><strong>This Angel grants you great physical and psychic energy</strong></span>
+                    <span><img src="/static/images/70-jabamiah.png" alt="drawing" class="angelCard" width="230"></span>
+                    <h3>My interpretation:</h3>
+                    <span>If need be, do not hesitate to accept advice from competent people and experts in their respective fields, so long as they can really help you evolve. If you remain humble and show yourself to be open-minded, Jabamiah will lead you to people who can help you in your personal development.</span>
+                    <span>Never be unfair: remember to show your gratitude to those who deserve it. For this, you will be blessed a hundredfold later.</span>
+                    <span>Avoid pride and greed. Always be modest, and do not count your chickens before they are hatched!</span>
+                    <h3>Jabamiah’s message to you:</h3>
+                    <span><em>“During this month, I will be the most likely to inspire you with the right answers to stay fit and have great psychical vitality. Also, I recommend that you regularly invoke me to benefit from my divine inspirations.</em></span>
+                    <span><em>To that end, sit down in front of a sheet of paper on which you will have written my name, Jabamiah, in capital letters at the top and in the center of this sheet of paper. Repeat my name ten times with faith in my ability to help you. Close your eyes for a few minutes while you ask me to help you stay fit and have great psychical vitality. Then, write down the ideas that will spontaneously come to your mind. You will find appropriate answers.</em></span>
+                    <span><em>Even though you may not believe circumstances favor your enrichment, my invisible presence around you guarantees that things are getting ready to go your way financially.</em></span>
+                    <span><em>Promise you will be fair at all times, and the angels will bless you in all your endeavors.</em></span>
+                    <span><em>Embody the values of justice and tolerance towards the person you love, with whom you should not be (overly) severe if their ideas and yours do not mesh completely, because understanding and accepting your mutual differences is the best way to allow your relationship to grow in strength and to make it last.”</em></span>
+                </div>
+                <span style="text-align: center;">{{ dates.7 }}</span>
+                <div>
+                    <span><strong>The Angel that will guide you is: Haziel</strong></span>
+                    <span><strong>This Angel symbolizes adaptation to change and supreme courage</strong></span>
+                    <span><img src="/static/images/9-haziel.png" alt="drawing" class="angelCard" width="230"></span>
+                    <h3>My interpretation:</h3>
+                    <span>Haziel helps you change your mindset and adopt new ideas and behaviors so that you may derive the greatest possible joy, love and profit from your earthly existence. The world is constantly evolving! In fact, that is what explains his dynamism and worth. So you too must adapt.</span>
+                    <span>If you do not show greater mental flexibility, if you cling to old notions which can no longer be justified, if you resist change, you will not be able to evolve.</span>
+                    <span>Over the next thirty days, Haziel advises you to dialog and be open to new ideas. Do not fear doing some soul-searching because, according to the Angelical Forces, you will find yourself in the best period you have gone through for months or even years, a period that could change your current living conditions.</span>
+                    <h3>Haziel’s message to you:</h3>
+                    <span><em>“Some things must be reviewed as far as your projects meant to earn more money and improve your love life are concerned. You are highly likely to change your life in the coming weeks. It would be a pity not to manage that simply because you’d hold on to some of your inappropriate ideas, which go against a real change in your living conditions. Open up to me by invoking me on a regular basis and I will guide you to new winning principles.</em></span>
+                    <span><em>In order to improve your financial situation, I recommend that you look for new ways to make money.</em></span>
+                    <span><em>You will enjoy good luck if you manage to come up with original ways to attract it in whatever area you want it to favor you, or by seeking original areas in which you may express your inner abilities.</em></span>
+                    <span><em>If it is to last, love must renew itself rather than persist in obsolete patterns of thought and action. Ensure you are always original, and yours will be a long-lasting relationship.”</em></span>
+                </div>
+                <span style="text-align: center;">{{ dates.8 }}</span>
+                <div>
+                    <span><strong>The Angel that will guide you is: Yelahiah</strong></span>
+                    <span><strong>This Angel is the guide that allows you to make your life an example for all</strong></span>
+                    <span><img src="/static/images/44-yelahiah.png" alt="drawing" class="angelCard" width="230"></span>
+                    <h3>My interpretation:</h3>
+                    <span>Take advantage of Yelahiah’s presence to start your life and projects over from scratch and to ask him for the best way to convert your life into a work of art. This means you must do all that lies within you in every area that interests you to embody the image of that which is beautiful, sensitive and good.</span>
+                    <span>Do not seek necessarily to profit from your activities. Perform them merely because they please you, and you will derive infinite riches from them.</span>
+                    <span>You might feel the dissatisfaction of those who are in the grip of the desire to have more and who eventually dry up on the inside. Beware, lest you suffer the same fate.</span>
+                    <h3>Yelahiah’s message to you:</h3>
+                    <span><em>“All throughout the month, I ask you to think hard about the consequences of your actions before you act. I implore you not to rush headlong even if you feel the urgent need to make things change in your life, whether it concerns your financial or emotional life. In my opinion, you have to take time to think before undertaking any action.</em></span>
+                    <span><em>Weigh the pros and cons and envisage what you – and other people involved – could win or lose. To find out, you first have to invoke my name five times. Close your eyes and ask me your question. Stay this way for five minutes, in a state of total openness. You should then receive many answers to your unanswered questions.</em></span>
+                    <span><em>By giving without seeking anything in return, you will reap everything you want in life. I know how to reward pure and sincere hearts.</em></span>
+                    <span><em>Do not forget that I, like all Angels, am Pure Love. Therefore, I will be responsive to your heartfelt generosity. If that is the case, you will always enjoy good luck.</em></span>
+                    <span><em>Think about giving rather than taking: in this way, sentimental harmony and inner beauty of the soul will be yours.”</em></span>
+                </div>
+                <span style="text-align: center;">{{ dates.9 }}</span>
+                <div>
+                    <span><strong>The Angel that will guide you is: Yeratel</strong></span>
+                    <span><strong>This Angel allows you to earn forgiveness and live a harmonious life</strong></span>
+                    <span><img src="/static/images/27-yeratel.png" alt="drawing" class="angelCard" width="230"></span>
+                    <h3>My interpretation:</h3>
+                    <span>The presence of Yeratel at your side tells you the time has come for you to ask for forgiveness. As for him, his intention in not to blame you but rather to help you move forward. </span>
+                    <span>He is neither judge nor prosecutor, but an angel who is there to help you. So call on him to obtain celestial mercy. If you do so sincerely, your shoulders will soon cease to bear the burden of your errors.</span>
+                    <span>All human being may stumble, but the Angels are not there to judge you either, because they have infinite love for you.</span>
+                    <span>Over the coming month, Yeratel advises you to call on the formidable capabilities of your mind to change your life, improve your living standards or experience greater emotional felicity. To that end, take a few minutes every day to invoke him. Then, visualize what you wish to change in your life. </span>
+                    <h3>Yeratel’s message to you:</h3>
+                    <span><em>“Start with the area where you need help as a priority – either your finances or your love life. Do not try to achieve your goals in these two areas at the same time. You would risk spreading yourself too thin and ending up with nothing.</em></span>
+                    <span><em>Focus on the area (your finances or your love life) where you most urgently need a change. If you act as I recommend you do, you should be positively surprised. When your first goal is reached, apply the same method in the other area.</em></span>
+                    <span><em>You will be able to attract money if you stand back and make a clean sweep of your past.</em></span>
+                    <span><em>Forgive yourself and turn the page: a radiant future will then await you with open arms.</em></span>
+                    <span><em>Avoid complicated relationships and always go for simplicity. This way, your love will be filled with harmony.”</em></span>
+                </div>
+                <span style="text-align: center;">{{ dates.10 }}</span>
+                <div>
+                    <span><strong>The Angel that will guide you is: Eyael</strong></span>
+                    <span><strong>This Angel symbolizes celestial intelligence and prioritizes action</strong></span>
+                    <span><img src="/static/images/67-eyael.png" alt="drawing" class="angelCard" width="230"></span>
+                    <h3>My interpretation:</h3>
+                    <span>Eyael’s presence will be most beneficial for the improvement of your life, if you learn to listen to what he has to tell you by first silencing your inner racket. A multitude of ideas will constantly invade you. Some you will find useful, others not at all. Learn to make the difference.</span>
+                    <span>Avoid following fanciful or fickle people. Before making a decision, make sure you understand it fully.</span>
+                    <h3>Eyael’s message to you:</h3>
+                    <span><em>“I ask you to take action right now, especially over the coming thirty days, because I did not come to give advice by accident. This month will indeed be favorable for you from an angelical point of view. I am near you to help you earn more money, improve your life and fulfil one of your goals over the coming weeks.</em></span>
+                    <span><em>To get you on the right track, I simply ask you to choose the area that urgently needs a change and do whatever it takes from you to make things change. Under these conditions, I will do everything I can to help you succeed quickly.</em></span>
+                    <span><em>Some extremely favorable financial currents will come into your life after you have called on me repeatedly. I will then help you take advantage of the waves of riches that are meant for you on the celestial plane.</em></span>
+                    <span><em>Soon, having good luck in your life should cease to be a problem thanks to my intervention. If your goals are truly positive and selfless, I can do nothing other than help you.</em></span>
+                    <span><em>To live the life you expect in matters of the heart will soon become your daily reality, if you think of me regularly, even when you have nothing to ask me.
+                            Just address simple positive thoughts to me, with no specific request, and you will receive beautiful sentimental surprises in return.”</em></span>
+                </div>
+                <span style="text-align: center;">{{ dates.11 }}</span>
+                <div>
+                    <span><strong>The Angel that will guide you is: Haheuiah</strong></span>
+                    <span><strong>This Angel helps you liberate yourself from rules and alleviated sufferings</strong></span>
+                    <span><img src="/static/images/24-hayuiah.png" alt="drawing" class="angelCard" width="230"></span>
+                    <h3>My interpretation:</h3>
+                    <span>Calling on Haheuiah sincerely will help you control your emotions and dissolve your subconscious blockages, because both factors are obstacles to your personal evolution.</span>
+                    <span>Avoid burdening yourself with the past and work on improving your present. Do not focus only on yourself!</span>
+                    <span>Through his presence at your side, Haheuiah wants to tell you that you should stop obeying some authorities because they prevent you from improving your life. It is up to you to take the necessary measures.</span>
+                    <h3>Haheuiah’s message to you:</h3>
+                    <span><em>“The “authorities” Elysia is referring to are the people who have an influence on you: family members, friends, acquaintances… I am indeed capable of giving you all the advice you need but, if you let others influence you, you will not lead the life you want. Ultimately, you are the only person who can choose to live your life the way you want.</em> </span>
+                    <span><em>To that end, follow my advice. I will help you live a better life over the coming months and improve your life in the long term. Starting today, live your life by following your own rules, the ones I will inspire you with under the guise of new ideas that will come to your mind.</em></span>
+                    <span><em>I will grant you the financial autonomy corresponding to your destiny, as it is written down in the heavenly spheres. It is both brilliant and rich but, so far, you have been unable to reap its benefits.</em></span>
+                    <span><em>Do not make overly specific requests, for you do not know what the Superior Spiritual Forces have in store for you. Their plans for you are magnificent, so accept every opportunity of good luck that comes your way.</em></span>
+                    <span><em>The ways of the Angels are mysterious, but they are tailored to your personality. Follow them with faith and confidence, because they are those that were meant to assure your lasting happiness.”</em></span>
+                </div>
+                <span>That’s it. The 12 Angels have spoken for you.</span>
+                <span>You can read their advice again as often as you like. As often as possible, <strong>read this angelic advice again while listening to the “celestial music of the prodigies”</strong> that the Angels have inspired me for you, and which you received in a previous message.</span>
+                <span>Indeed, combining these celestial messages with that music will trigger a “spiritual synchronization” phenomenon. This spiritual synchronization between the words I have written for you and the powers Above will have a very positive effect on your state of mind.</span>
+                <span>Before I dealt with the ritual itself, I focused on your <strong>ANGELIC NUMBERS OF GAINS.</strong> Dictated by the celestial forces, these numbers will multiply your odds to win whenever you gamble during the next 4 weeks.<br><br>When I think about all the things that these numbers might bring you, I cannot help but be emotional as I unveil them for you here:</span>
+                <span>&nbsp;</span>
+                <div style="text-align: center;"><span style="font-size: 18pt;"><strong>{{ shortcode }}</strong></span></div>
+                <span>&nbsp;</span>
+                <span>Keep them carefully.</span>
+{#                <span>Now&nbsp; it is time for me to tell you about the <strong>very important additional message that, {{ guardian_angel }}, your personal guardian angel, has entrusted me with for you,</strong> as I was about to put my angelic tarot away.<br><br><span style="font-size: 18pt;">Revelations will shed some new light on your life! You will finally know everything:</span><br><br>Here is {{ guardian_angel }}‘s message for you:</span>#}
+{#                <span>&nbsp;</span>#}
+{#                <span style="line-height: 30px; text-align: center;">{{ account.first_name }} must face serious personal problems. The future we have foreseen is an ideal future. But there is a screen of negative energy, a mental barrier of misfortune and bad vibrations that only you can break, Elysia. After your intervention, when {{ account.first_name }}‘s aura has been cleared from any obstacle, we can intercede again and unleash the blessings and treasures we have seen written in golden letters in {{ account.first_name }}‘s destinal sky.</span>#}
+{#                <span>So, before I wrote this letter I connected onto you using my telepsychic gifts. I saw and I felt your aura: it was surrounded with patches of shadow… <strong>These patches of shadow were swirling, a barrier against the golden vibrations of success and happiness that the angels keep sending your way…</strong> <br>#}
+{#                    <br>#}
+{#                    {{ guardian_angel }} has said as much in his message. No matter how strong they are, <strong>the angels are powerless when human-caused events have damaged the aura…</strong> Unfortunately, this is your case… In that case, the angels need a human mediator to break that grey barrier around you… <br>#}
+{#                    <br>#}
+{#                    And I, Elysia, am this human mediator. As I told you before, I am the only person in the world – as far as I know – who can speak with angels and receive so many messages from them. I receive many every day. But let’s focus on your aura:&nbsp; &nbsp;<br>#}
+{#                    <br>#}
+{#                    {{ account.first_name }}, I had already mentioned it but your celestial guide has confirmed it. <strong>I have clearly felt negative forces that are harmful to your happiness.</strong> As a matter of fact, it is truly miraculous that your angel has manifested and that you have replied on time… According to my experience, a few more days and your situation would have been so serious that there might not have been any way out… But the angels have heard your prayers and seen the pain you have to endure. Do you need proof? <br>#}
+{#                    <br>#}
+{#                    Today, the angels – and I – have discovered where are the <strong>personal obstacles</strong> that block your ascension to the golden success that has been foreseen for you! And it’s nothing new… <br>#}
+{#                    <br>#}
+{#                    Indeed, when I see your aura, I tell myself that some unscrupulous people have hurt you a lot, and you still have a few scars in your mind. This is the root cause of all these blocks that are <strong>so many obstacles on your path to the celestial treasures</strong> of love, wealth, and success… <br>#}
+{#                    <br>#}
+{#                    <strong>However, you made the right decision, and things will keep getting better and better with my help, and the help of the world of the angels.</strong><br>#}
+{#                    <br>#}
+{#                    So let us focus on your current situation. This situation is the direct consequence of the choices and decisions you have made throughout your life.<br>#}
+{#                    <br>#}
+{#                    And that’s where the shoe pinches: <br>#}
+{#                    <br>#}
+{#                    According to the analysis of your psychic active state that I made, it seems that you are suffering from <strong>4 big problems, 4 major obstacles in your life.</strong> These personal problems, these obstacles are restraining the positive action of the angelic forces that can be seen in your future… <br>#}
+{#                    <br>#}
+{#                    As long as these personal problems persist, you won’t be able to receive all the blessings that the angels want to unleash in your life. But have faith, because there is <strong>a very simple solution,</strong> and you can read all about it later on in this message.<br>#}
+{#                    <br>#}
+{#                    First, here are the 4 obstacles that I can eliminate very soon from your life! I promise. <br>#}
+{#                    <br>#}
+{#                    <span style="font-size: 18pt;">First major problem: Chronic Lack of Money.</span><br>#}
+{#                    <br>#}
+{#                    {{ account.first_name }}, am I right when I tell you that your entire life has been built around a <strong>lack of money?</strong> A lack of resources? Not enough money to do this or that. Not enough money for your education, or to go on holiday in a paradise destination… It was all out of reach. <strong>Soon it won’t be the case anymore if you put your trust in me!</strong> <br>#}
+{#                    <br>#}
+{#                    And so, your golden destiny will have a chance to happen! I notably have a <strong>first large amount of money</strong> in mind, which you should receive soon if you follow my advice, and the advice of the angels. <br>#}
+{#                    <br>#}
+{#                    First of all, I want to say that it is not your fault if you have financial problems and other troubles. These major obstacles mainly stem from other people, their ideas, and the influence they had over you. You are not to blame…<br>#}
+{#                    <br>#}
+{#                    You are a fundamentally honest and upright person. You have just been subjected to the “mental pollution” that was inflicted upon you in your childhood. And it is about money… <br>#}
+{#                    <br>#}
+{#                    To speak plainly: Instead of welcoming money into your life, you subconsciously refuse it, due to negative ideas that have clouded your mind. These ideas do not come from you, but from your loved ones, your “friends”, your teachers…<br>#}
+{#                    <br>#}
+{#                    Indeed, negative comments such as <em>“money cannot buy happiness”</em> or <em>“money is the source of all the world’s problems”</em>, or even <em>“you need to be dishonest if you want to make some money”</em>… <br>#}
+{#                    <br>#}
+{#                    In time, you have accepted these ideas and today, unbeknownst to you, unconsciously, you have built invisible mental barriers all around you. <strong>These invisible barriers repel money instead of letting it in!</strong> <br>#}
+{#                    <br>#}
+{#                    {{ account.first_name }}, I know all about this problem, and I had the chance to <strong>solve it</strong> for many people. <strong>With 100% success rate!</strong> How? You can now read about it and see it for yourself in your life… it is thanks to: <br>#}
+{#                    <br>#}
+{#                    <span style="font-size: 18pt;">Angelic Transcommunication</span> <br>#}
+{#                    <br>#}
+{#                    Indeed, to that end I use <strong>an angelic magical process, and no one else knows that secret:</strong> <br>#}
+{#                    <br>#}
+{#                    This process is called “<a href="/st/stratb/c2/bdc/4-angelical-trancommunication-contacts">Angelic Transcommunication</a>“. With it, I use the almighty power of the angels to <strong>break the patches of shadow caused by other people’s thoughts,</strong> thoughts of jealousy or envy, and even all the negative waves that can stem from the “evil eye”, from karmic debt, or from an evil spell! <br>#}
+{#                    <br>#}
+{#                    As such, once I have shattered all the barriers that keep you far away from your true destiny, like an “insect” struggling in a spider’s web, <strong>you can seize the wonderful future that the angels have heralded for you!</strong></span>#}
+{#                <span>&nbsp;</span>#}
+{#                <p class="alert" style="text-align: center;"><a href="/st/stratb/c2/bdc/4-angelical-trancommunication-contacts">Benefit from Angelic Transcommunication Contacts</a></span>#}
+{#                    <span><br>#}
+{#                            {{ account.first_name }}, before I give you more details about “<a href="/st/stratb/c2/bdc/4-angelical-trancommunication-contacts">Angelic Transcommunication</a>” and all the things it will bring you in your life to <strong>get rid of these 4 major obstacles once and for all,</strong> let me first tell you about Jenny’s case, a 58-year-old woman:<br>#}
+{#                            <br>#}
+{#                            Jenny was in a dreadful situation. When she turned 58, her husband left her for a younger girl, taking all their savings with him. For Jenny, it was a slow descent into hell. Her husband had money, and she was left penniless. She had never worked, so that she could raise her 3 children. This is what she wrote to me last week:</span>#}
+{#                    <span style="text-align: center;"><br>#}
+{#                            <strong><span style="font-size: 24pt;">REAL LIFE STORY</span></strong></span>#}
+{#                <p class="quote testimonial">… It was completely hopeless. I’d been in the red for months and I received more bills than postcards. I had no money. My landlord was about to kick me out. I did some housecleaning work but I did not earn enough money to pay for everything… <br>#}
+{#                    One night I was browsing the Internet and I saw your message. As soon as I read it, I started to cry. I don’t know why I replied, to be honest. I felt as if we had known each other for a long time, and I was replying a friend. <br>#}
+{#                    Elysia, everything happened very quickly after my first transcommunication, as you say: I was walking on the street and I heard a voice, telling me to buy some lottery tickets. I did not have much on me but I spent it all. I bought the tickets and I won the super-jackpot. Wow. If only you could have seen me, I could not believe it. But wait, there is more…&nbsp; &nbsp;<br>#}
+{#                    3 days later, I was cleaning the home of a new customer, a widowed man. I was given this new job by the agency I had been working for. As soon as I saw Albert when he opened the door, it was love at first sight… <br>#}
+{#                    Today, I am living with him. We are talking about getting married. I can never thank you enough for everything you have done, for everything the angels have done for me. You are my own angel, and I pray for you every day. Thank you, with all my heart…</span>#}
+{#                <p class="content-logo text-right" style="text-align: right;">Jenny</span>#}
+{#                    {{ account.first_name }}, you see, you always need to have hope. You most of all, since you are among the “Chosen ones”. You must understand that <strong>all the elements are there to turn your life into a huge success story.</strong> This is what is going to happen:<span></span>#}
+{#                    <span>&nbsp;</span>#}
+{#                <p class="alert" style="text-align: center;">Your angelic arcana will have a chance to express themselves with all their celestial might to bring you the happiness you crave. As soon as I have dealt with the “root problem”…</span>#}
+{#                    <span>&nbsp;</span>#}
+{#                    <span>Yes, using the <a href="/st/stratb/c2/bdc/4-angelical-trancommunication-contacts">Angelic Transcommunication Contacts</a>, I can soon <strong>rid you of anything that might hinder your happiness, your success, your love, your prosperity, and your luck!</strong><br>#}
+{#                            <br>#}
+{#                            But allow me to return to the other obstacles that we have found within you. The very same obstacles that we will permanently remove from your life through me, with the assistance of the angels! <br>#}
+{#                            <br>#}
+{#                            <span style="font-size: 18pt;">Second major problem: Lack of Achievements and Success!</span><br>#}
+{#                            <br>#}
+{#                            {{ account.first_name }}, I am right here too, aren’t I? For years, you have struggled to be successful in life. And yet every time that goal seems within reach, it all falls down like a house of cards. It’s always the same, you believe you can hold your success in your hands and it slips away through your fingers. It can affect your mood, your confidence, and your self-esteem… Do you agree? <br>#}
+{#                            <br>#}
+{#                            Once again, <strong>you are not to blame</strong> for that lack of achievements and success. Just like it was for your lack of money, <strong>your lack of success comes from these negative thoughts</strong> you’ve been hearing since childhood. <br>#}
+{#                            <br>#}
+{#                            {{ account.first_name }}, I don’t want to sound like I am ramming it in, but tell me: am I right again when I tell you that during your childhood or your teenage years, some people have told you, <em>“If you keep going like this, your life will be wasted…”</em> <br>#}
+{#                            <br>#}
+{#                            Now you know that year after year you have created <strong>the same invisible barriers that keep your success away.</strong> Even when you did not spare any effort in your attempts. Regardless, the kind of success you are hoping for has yet to happen. You even feel guilty for that situation.<br>#}
+{#                            <br>#}
+{#                            <strong>As a matter of fact, you are not guilty, but just a victim.</strong> A victim of all the sarcasm that, let me tell you, has ruined your climb up the social ladder! Kept you away from your place in the sun. The worst part, for you, is the way that other people sneer at your personal situation. Whether you like it or not, you can hear some of the things people say behind your back: <em>“This failure is far from the first. It must be tough for any loved one…”</em><br>#}
+{#                            <br>#}
+{#                            <strong>Well, it is all finally about to end!</strong> You can finally get all the achievements and success you want through the <a href="/st/stratb/c2/bdc/4-angelical-trancommunication-contacts">Angelic Transcommunication Contacts</a>. Just like Norbert, 40:</span>#}
+{#                    <span style="text-align: center;"><br>#}
+{#                            <strong><span style="font-size: 24pt;">REAL LIFE STORY</span></strong></span>#}
+{#                <p class="quote testimonial">… Elysia, I had nothing but frustrations. And it only bred negative remarks from my parents, but also from my wife and even my children. But this time, the situation was dire. I had a small clothes business, but no one would set foot in the shop. And I had to get a loan from the bank to start the company… <br>#}
+{#                    In the beginning, in spite of all the proof you had given me from my own life, I had a hard time believing it was possible. I had reached a point where only a miracle could save me. And so I replied. And how fortunate it was that I did, because what has happened since is a genuine miracle. <br>#}
+{#                    This happened a few days after my second angelic transcommunication contact. It was a Wednesday, and a stranger came into the shop with a few photographers. It was a very famous rap music star. He told me he loved the concept of my shop, and asked me to create the concept of his new store chain dedicated to his own clothes brand. <br>#}
+{#                    My destiny has changed overnight. Today everyone looks up to me, and for the first time in their life my parents told me how proud they were. Thank you Elysia, you have changed my life forever…</span>#}
+{#                <p class="content-logo text-right" style="text-align: right;">Norbert</span>#}
+{#                    {{ account.first_name }}, achievements and success could be your companions too. Don’t you have some personal projects you would like to undertake? You can be sure that they’re as good as done.<span></span>#}
+{#                    <span>&nbsp;</span>#}
+{#                <p class="alert" style="text-align: center;">Your <a href="/st/stratb/c2/bdc/4-angelical-trancommunication-contacts">Angelic Transcommunication Contacts</a> will bring you all the success you deserve and are rightfully expecting.</span>#}
+{#                    <span>&nbsp;</span>#}
+{#                    <span>Yes, being successful with a lot of achievements is a joy that cannot compare. You will feel like you have grown, standing taller than others. You will have the kind of magnetic charisma that characterizes those who are successful! <br>#}
+{#                            <br>#}
+{#                            And you know what, tomorrow the same people who used to complain will flock to compliment you and strive to be near you. You will see, it’s amazing how much people change once you are successful… <strong>Being one of the winners will turn you into someone new:</strong> <br>#}
+{#                            <br>#}
+{#                            A <strong>confident</strong> person, <strong>self-assured, magnetic, charismatic, with a strong ability to influence others</strong> for your own good! Yes, you will be a very different person after these contacts. You will be counted among those who are always lucky! <br>#}
+{#                            <br>#}
+{#                            Why? <br>#}
+{#                            <br>#}
+{#                            <span style="font-size: 18pt;">Third major problem: Lack of Luck</span><br>#}
+{#                            <br>#}
+{#                            Soon it will be impossible to say that you are never in luck. Indeed, <strong>there really is some luck around you.</strong> It is only clouded by the patches of shadow I told you about before. <br>#}
+{#                            <br>#}
+{#                            First, you should know how incredibly lucky you are that the angels have decided to help you, through me. Only a rare few people can benefit from this “premium” treatment you will receive with the “<a href="/st/stratb/c2/bdc/4-angelical-trancommunication-contacts">Angelic Transcommunication Contacts</a>“<br>#}
+{#                            <br>#}
+{#                            {{ account.first_name }}, my angelic vision has let me see that in the past you have let many opportunities that might have put your life back on track slip through your fingers. And yet it has never happened. Why? <br>#}
+{#                            <br>#}
+{#                            Always for the same reasons… Yes, as I said above, <strong>angels find it impossible to imbue you with all their blessings</strong> due to the state of your aura, and the veil shrouding you and the golden destiny they had planned for you.<br>#}
+{#                            <br>#}
+{#                            <strong>This is the reason why I need to act as soon as possible to get rid of these problems with these wonderful “<a href="/st/stratb/c2/bdc/4-angelical-trancommunication-contacts">Angelic Transcommunication Contacts</a>“.</strong><br>#}
+{#                            <br>#}
+{#                            Now tell me: what do you mean by “being lucky”? A few random numbers that suddenly make you rich? Meeting people who facilitate your projects and let you earn a lot of money? Having other people be in awe before you because everything you touch turns into “gold”? Miraculously being safe out of an accident? <br>#}
+{#                            <br>#}
+{#                            {{ account.first_name }}, there are many definitions for luck. <strong>The luck I am telling you about is “the luck of the ‘Chosen Ones'”.</strong> A brazen kind of luck that will change your life and your point of view. You won’t ever say <em>“I am out of luck”</em> anymore, but <em>“how can I be so lucky?”</em> In every aspect of your life! <br>#}
+{#                            <br>#}
+{#                            This is why I wish to explain <strong>why and how</strong> these “contacts” will solve your personal problems for good. But first let me share a few testimonials from people who could benefit from the celestial help of the “<a href="/st/stratb/c2/bdc/4-angelical-trancommunication-contacts">Angelic Transcommunication Contacts</a>“:</span>#}
+{#                    <span>&nbsp;</span>#}
+{#                <p class="quote testimonial">I played just like the angels said, and I won more than <span data-shortcode="gain">#}
+{#$85,933#}
+{#</span>#}
+{#                    .</span>#}
+{#                <p class="content-logo text-right" style="text-align: right;">Jean</span>#}
+{#                <p class="quote testimonial">&nbsp;I won&nbsp;<span data-shortcode="gain">#}
+{#$151,814#}
+{#</span>#}
+{#                    within 6 weeks.</span>#}
+{#                <p class="content-logo text-right" style="text-align: right;">Marie</span>#}
+{#                <p class="quote testimonial">I just got a new job with a pay twice as high as what I used to earn, and I met the woman of my dreams.</span>#}
+{#                <p class="content-logo text-right">Bobby</span>#}
+{#                <p class="quote testimonial">I have met an influent person who enabled me to get a very well-aid job, an end to all my money problems.</span>#}
+{#                <p class="content-logo text-right">Claude</span>#}
+{#                <p class="quote testimonial">Fortunately I listened to what the Angels had to say to you. I don’t know why I changed my mind about the trip I had planned on my own and replaced it with another, planned by an organization close to home. This was an absolutely wonderful holiday!</span>#}
+{#                <p class="content-logo text-right">Jacqueline</span>#}
+{#                    <span>To be honest, this is only a small part of all the testimonials I have received, you see! And what I did for these people, I can also do for you. Even better, because <strong>the angels are asking me to do it for you!</strong> <br>#}
+{#                            <br>#}
+{#                            Yes, you will be able to say <em>“How can I be so lucky?”</em> Don’t forget that it is Celestial luck operating for you! You can expect to meet many jealous and envious people.<br>#}
+{#                            <br>#}
+{#                            Case in point, be sure not to overly flaunt just how lucky you are. Don’t speak about the “celestial blessings” you will be granted. Even if celestial luck and change everything and bring you the material comfort you crave, don’t forget that the angels were the ones who decided to give you this big opportunity, the biggest of your life! And above all, don’t forget that many people can resent how happy other people are… <br>#}
+{#                            <br>#}
+{#                            <span style="font-size: 18pt;">Fourth major problem: Lack of Love</span><br>#}
+{#                            <br>#}
+{#                            {{ account.first_name }}, we will now deal with an intimate problem. I am your friend, a confident, and your mediator in your dealings with angels. As such, there can be no secrets between us. We can say anything to one another… My angelic vision has let me know that <strong>love is very important in your life.</strong> As a matter of fact, it would be fair to say that you want love more than anything else. You are one of the big-hearted people, those who can give without limit… <br>#}
+{#                            <br>#}
+{#                            However, this same angelic vision lets me see that your heart does not receive all the love you are hoping for. All the love you deserve. Regardless of your current situation, you feel great loneliness deep inside your heart. Am I right again? <br>#}
+{#                            <br>#}
+{#                            Yes, the solitude that cuts you like a knife every day hurts more and more. A wound deep within you, within your soul. Regardless, my feelings clearly show that since you were young, you often had a single idea in mind: being fully and sincerely loved for who you are… without trying to turn you into someone you’re not.<br>#}
+{#                            <br>#}
+{#                            {{ account.first_name }}, look deep within you, within your heart, and tell me that I am right. You know I am. <br>#}
+{#                            <br>#}
+{#                            So, I received two testimonials about this two weeks ago. Please read them and see how important these “<a href="/st/stratb/c2/bdc/4-angelical-trancommunication-contacts">Angelic Transcommunication Contacts</a>” can be.</span>#}
+{#                    <span>&nbsp;</span>#}
+{#                <p class="quote testimonial">… Elysia you were right and I was lying to myself… It’s true that I was married, but I wasn’t happy. No matter how hard I tried, deep within I knew that it wasn’t love. I had found true love once when I was young. But it didn’t last. I was not from the same world… <br>#}
+{#                    Well, I got married for lack of a better option… I had been lucky sometimes, but there I felt lost. I received an email from you and I replied, ignoring my own doubts.<br>#}
+{#                    I can never congratulate myself enough for it. After my contact sessions, everything changed. First, my husband left me for one of my friends. I knew they were having an affair anyway.<br>#}
+{#                    A few days later, I was at the movies when I met a man at the booth. I had never believed in love at first sight. Now I understand. When we hugged, we both felt a spark. His name is Patrick and now I know he is the one. I am finally happy. I have found my soul mate. I wish I could have met you sooner.&nbsp;</span>#}
+{#                <p class="content-logo text-right">Meg</span>#}
+{#                    <span>And now, here is a testimonial from Clotilde, 52:</span>#}
+{#                    <span>&nbsp;</span>#}
+{#                <p class="quote testimonial">… people would call me a spinster. It’s hard for a woman to be on your own when you’re over 50. No matter how hard I tried to find a man I could love with all my heart and who would love me back. I tried everything, dating websites, bachelor cruises… Sometimes my relationships would only last a single night. I felt as if no one would ever want me. <br>#}
+{#                    In truth, before I met you, I had become a bitter woman, complaining about my own fate. I received an email from you one evening and something magical happened… When I read what you wrote, it gave me back hope. I replied, and it made me truly happy. <br>#}
+{#                    Indeed, now I have found my soul mate! His name is Philippe. He is the new building manager. Love came to me like a dove comes to rest on a poplar branch. <br>#}
+{#                    We have been sharing all our passions since then. Even when people are looking at us in a funny way because he is ten years younger than I am, we live our passion to the fullest. Thanks Elysia for everything you have done for me. I will keep praying for you every night, just like I pray to the angels for all the happiness they have given me to last a long time.</span>#}
+{#                <p class="content-logo text-right">Clotilde</span>#}
+{#                    <span>Now that I told you everything about these obstacles that hinder the blessings that the angels wish to send your way for the next 12 months, let me tell you about <strong>these fantastic contacts.</strong> No one else knows that secret.</span>#}
+{#                <ul>#}
+{#                    <li><strong>For 4 weeks,</strong> once a week on any evening you will choose (you will see how easy it is, you just need to click on your <a href="/st/stratb/c2/bdc/4-angelical-trancommunication-contacts">priority agreement</a>), you just need to dedicate <strong>15 little minutes</strong> to me, time enough for me to operate remotely using <a href="/st/stratb/c2/bdc/4-angelical-trancommunication-contacts">Angelic Transcommunication</a>.</li>#}
+{#                </ul>#}
+{#                <ul>#}
+{#                    <li>I will first make contact with your guardian angel. Once contact has been made, <strong>your guardian angel will send me celestial energy.</strong> I will then steer that celestial energy onto the patches of shadow that disturb your aura. These patches of shadow are the cause of the 4 obstacles. Let’s not forget that these obstacles are a barrier against the blessings and benefits that your angel wishes to offer you.</li>#}
+{#                </ul>#}
+{#                <ul>#}
+{#                    <li>{{ account.first_name }}, during these 15 minutes, <strong>you won’t have anything specific to do,</strong> except <strong>listening to the celestial music</strong> that I will carefully send you before each contact. You will only have to sit or lie down comfortably while listening to this music especially composed to attune the vibrations of your aura with positive celestial forces.</li>#}
+{#                </ul>#}
+{#                <ul>#}
+{#                    <li><strong>You won’t think about anything specific during these 15 minutes.</strong> You will very soon feel a flow of positive energy enter you through your solar plexus. Don’t worry, this is the positive celestial energy that will act against the patches of shadow that are to blame for your personal problems! You see, you really won’t have anything to do. <strong>I will handle everything, and you will finally reap the happiness you have been promised.</strong></li>#}
+{#                </ul>#}
+{#                <span><span style="font-size: 18pt;">4 Weeks for your Complete Happiness</span><br>#}
+{#                            <br>#}
+{#                            <strong>{{ account.first_name }}, you will enter a brand new life within a month.</strong> The life that the angels have planned for you. A rich life full of success, love, and achievements. But before I can perform what the angels are asking me to do on your behalf, <a href="/st/stratb/c2/bdc/4-angelical-trancommunication-contacts">you must give me your agreement</a>. <br>#}
+{#                            <br>#}
+{#                            This is quite easy to do. You just need to click on this link</span>#}
+{#                <p class="alert" style="text-align: center;"><a href="/st/stratb/c2/bdc/4-angelical-trancommunication-contacts">{{ account.first_name }}efit from Angelic Transcommunication Contacts</a></span>#}
+{#                    <span>You see how <strong>simple</strong> it is, and I believe it is <strong>essential</strong> to ensure that your angel-predestined future comes true. You know that you can count on me. Divine Providence has ensured that we would meet. No one can deny it. And deep within, you know that everything I just told you is absolutely true. <br>#}
+{#                            <br>#}
+{#                            {{ account.first_name }}, I really care about your happiness. This is why I decided to do something very special for you.<br>#}
+{#                            <br>#}
+{#                            <span style="font-size: 18pt;">I want to offer you <strong><a href="/st/stratb/c2/bdc/4-angelical-trancommunication-contacts">a Celestial gift</a>.</strong></span><br>#}
+{#                            <br>#}
+{#                            It is a very ancient secret of angelic magic: your personal “<a href="/st/stratb/c2/bdc/4-angelical-trancommunication-contacts">Secret Invocation Mantras</a>“.<br>#}
+{#                            <br>#}
+{#                            These magic words, dictated by the angels, will allow you to reap even more benefits from your “<a href="/st/stratb/c2/bdc/4-angelical-trancommunication-contacts">Angelic Transcommunication Contacts</a>” sessions.<br>#}
+{#                            <br>#}
+{#                            As soon as you have given me your agreement, I will immediately send you this powerful magical secret. This precious help will help you get all the money, success, luck, and love you want even faster.</span>#}
+{#                    <span>&nbsp;</span>#}
+{#                    <span style="text-align: center;"></span><div class="cta" data-shortcode="cta">#}
+{#                <h4 class="ctaTitle Title">#}
+{#                    I want to benefit from the </h4>#}
+{#                <div class="ctaBox" style="background-color: #465b71; color: #FFF;">#}
+{#                    <div class="ctaBox_content" style="border: 2px solid #FFF;">#}
+{#                        <a href="/st/stratb/c2/bdc/4-angelical-trancommunication-contacts">#}
+{#                            <div class="ctaBox_text">#}
+{#<span class="ctaBox_text-product">#}
+{#4 Angelic Transcommunication Contacts </span>#}
+{#                                <span class="ctaBox_text-gift" style="color: #FFF;">#}
+{#And to receive my Secret Invocation Mantras (free) </span>#}
+{#                            </div>#}
+{#                        </a>#}
+{#                    </div>#}
+{#                </div>#}
+                <span>I am watching over you</span>
+                <span class="sales-signature">Elysia</span>
+            </div>
+        </div>
+        <div class="cell large-3">
+
+        </div>
+    </div>
+{% endblock %}

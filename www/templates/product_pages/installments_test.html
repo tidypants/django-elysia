@@ -1,0 +1,210 @@
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="{% static "images/favicon.ico" %}">
+        <title>Elysia Medium | {% block title %}{% endblock %}</title>
+        <link href="{% static "style/foundation.css" %}" rel="stylesheet">
+        <link href="{% static "style/www.css" %}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Tangerine" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="https://js.stripe.com/v3/"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.js"></script>
+	    <script>var stripe = Stripe('pk_test_WHPqZCj5N7fqRSxuV7KDfgST');</script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82494651-10"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-82494651-10');
+        </script>
+    </head>
+    <body class="productBody">
+        <header>
+            <div class="wrap">
+                <div class="grid-x headertop">
+                    <div class="cell large-3 medium-4">
+                        <img class="salesElysia" src="{% static "images/elysia2_headshot_large.png" %}" alt="Elysia">
+                    </div>
+                    <div class="cell large-6 medium-6">
+                        <img class="salesLogo" src="{% static "images/AN_logo_EN2.png" %}" alt="Logo">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="pageContent productPage">
+            <div class="wrap">
+                <div class="grid-x">
+                    <div class="cell large-9">
+                        <div class="sales-content">
+                            <span style="color: #e0a850; text-align: center">SECURE PAYMENT PAGE</span>
+                            <span class="sales-signature">Payment details</span>
+                            <span>You have selected : <b>3 payments with no extra charge</b>. This option lets you spread your contribution over a period of three months. As such, you will pay: </span>
+                            <span>✔ One third of the full amount today</span>
+                            <span>✔ Another third will be automatically charged to your bank account 30 days from now</span>
+                            <span>✔ The last third will be automatically charged to your bank account 60 days from now.</span>
+                            <span>You will receive: <b>Great 12-Month Angelic Tarot Reading</b></span>
+                            <span>You are paying a contribution amounting to: <b>(paid in USD - ${{ price }}.00)</b></span>
+                            <span>Today you are paying <b>${{ installment|floatformat:"2" }}</b></span>
+                            <span>Simple and crystal clear! As usual for my services, this Help entitles you to my 100% Satisfaction Guarantee.</span>
+                            <span class="sales-signature">Elysia</span>
+                            <div class="payment-heading">
+                                <h3>Secure Payment</h3>
+                            </div>
+                            <form action="/process-test?cid={{ cid }}&uid={{ account.id }}" method="post" id="payment-form">
+                                <h2>Payment</h2>
+                                <div id="checkoutForm">
+                                    <div class="group">
+                                        <span id="card-errors"></span>
+                                        <div>
+                                            <label for="card-number">Card Number</label>
+                                            <div id="card-number-element" class="field" style="padding: 15px 12px;"></div>
+                                        </div>
+                                        <div class="halfInput" style="margin-right: 15px;">
+                                            <label for="card-expiry">MM / YY</label>
+                                            <div id="card-expiry-element" class="field" style="padding: 15px 12px;"></div>
+                                        </div>
+                                        <div class="halfInput">
+                                            <label for="card-cvv">CVV</label>
+                                            <div id="card-cvc-element" class="field" style="padding: 15px 12px;"></div>
+                                        </div>
+                                    </div>
+                                    <h2 id="orderTotal">${{ installment|floatformat:"2" }} today</h2>
+                                    <input type="hidden" id="method" name="method" value="installments">
+                                    <input type="hidden" id="price" name="price" value="{{ price }}">
+                                    {% csrf_token %}
+                                    <button type="submit">VALIDATE</button>
+                                </div>
+                            </form>
+                            <script>
+                                var elements = stripe.elements();
+
+                                var style = {
+                                    base: {
+                                        iconColor: '#666EE8',
+                                        fontSize: '17px',
+                                        fontFamily: 'Helvetica Neue',
+                                        color: '#43454b',
+                                    },
+                                };
+
+                                var cardNumberElement = elements.create('cardNumber', {
+                                    style: style,
+                                    placeholder: "Card Number"
+                                });
+                                cardNumberElement.mount('#card-number-element');
+
+                                var cardExpiryElement = elements.create('cardExpiry', {
+                                    style: style,
+                                    placeholder: "Expiry Date"
+                                });
+                                cardExpiryElement.mount('#card-expiry-element');
+
+                                var cardCvcElement = elements.create('cardCvc', {
+                                    style: style
+                                });
+                                cardCvcElement.mount('#card-cvc-element');
+
+                                var form = $("#payment-form");
+
+                                $.validator.methods.email = function( value, element ) {
+                                    return this.optional( element ) || /[a-zA-Z0-9_.-]+@[a-zA-Z0-9_.-]+\.[a-zA-Z0-9_.-]+/.test( value );
+                                };
+
+                                $.validator.addMethod("fullname", function(value,element){
+                                    return this.optional( element ) || /[a-zA-Z]+ [a-zA-Z]/.test( value );
+                                }, "Please enter full name" );
+
+                                form.validate({
+                                    rules: {
+                                        name: {
+                                            required: true,
+                                            fullname: true
+                                        },
+                                        email_address: {
+                                            required: true,
+                                            email: true
+                                        },
+                                        address_country: {
+                                            required: true
+                                        },
+                                        address_line1: {
+                                            required: true
+                                        },
+                                        address_city: {
+                                            required: true
+                                        },
+                                        address_state: {
+                                            required: true
+                                        },
+                                        address_zip: {
+                                            required: true
+                                        }
+                                    }
+                                });
+
+                                form.submit(function(event) {
+                                    event.preventDefault();
+                                    if (form.valid()) {
+                                        $('#payment-form button').prop('disabled', true);
+                                        stripe.createToken(cardNumberElement).then(function(result) {
+                                            if (result.error) {
+                                                var errorElement = document.getElementById('card-errors');
+                                                errorElement.textContent = result.error.message;
+                                                $('#payment-form button').prop('disabled', false);
+                                            } else {
+                                                stripeTokenHandler(result.token);
+                                            }
+                                        });
+                                    }
+                                });
+
+                                function stripeTokenHandler(token) {
+                                    var form = document.getElementById('payment-form');
+                                    var hiddenInput = document.createElement('input');
+                                    hiddenInput.setAttribute('type', 'hidden');
+                                    hiddenInput.setAttribute('name', 'stripeToken');
+                                    hiddenInput.setAttribute('value', token.id);
+                                    form.appendChild(hiddenInput);
+                                    form.submit();
+                                }
+                            </script>
+                        </div>
+                    </div>
+                    <div class="cell large-3">
+                        <div class="sales-content">
+                            <h5>100% Secure</h5>
+                            <span>You benefit from my satisfaction guarantee. Should the Help received not bring you total satisfaction, you could ask for it to be refunded; this is my commitment to you, which is clearly indicated in my legal terms.</span>
+                            <span>Any questions can be answered at support@elysia-medium.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footermain">
+            <div class="wrap">
+                <div class="grid-x privacylegal">
+                    <div class="cell">
+                        <ul>
+                            <li class="firstlink"><a href="/privacy">Privacy Policy</a></li>
+                            <li><a href="/terms">Legal Terms</a></li>
+                        </ul>
+                        <p>www.elysia-medium.com belongs to and is managed by SL Digital</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

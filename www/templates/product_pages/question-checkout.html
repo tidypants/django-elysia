@@ -1,0 +1,262 @@
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-NJXGk7R+8gWGBdutmr+/d6XDokLwQhF1U3VA7FhvBDlOq7cNdI69z7NQdnXxcF7k" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style/cc.css" type="text/css">
+    <title>Free Reading | Elysia Medium</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Tangerine" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js" integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js'></script>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.js'></script>
+    <script>var stripe = Stripe('pk_live_LMTFDMBmU9jG8jexxH92xSMg');</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82494651-10"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-82494651-10');
+    </script>
+    <!-- Hotjar Tracking Code for elysia-medium.com -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1227127,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+</head>
+<body class="v3-signup" style="font-family: Josefin Sans,sans-serif;">
+<section class="thin-signup__header">
+    <img style="height: 120px; display: block; margin: 0 auto;" src="/static/images/elysiaheader.png">
+</section>
+<div class="v3-body" style="padding-top: 0">
+    <form id="fullSignupForm">
+        <div class="v3-card v3-card-current" id="card1" data-q="for_good">
+            <div class="v3-card__title">Do you agree to only use the information I am about to share for good?</div>
+            <div class="v3-card__subtitle">I have been told that my work is very accurate, it must only be used in a positive way.</div>
+            <div class="v3-card__questions" style="overflow: hidden">
+                <a class="v3-questions__fast-card" id="q1answYes"><img src="/static/images/impcard.png"><span>YES</span></a>
+                <a class="v3-questions__fast-card" id="q1answNo"><img src="/static/images/impcard.png"><span>NO</span></a>
+            </div>
+        </div>
+        <div class="v3-card" id="card2" data-q="not_share">
+            <div class="v3-card__title">Do you promise not to share your psychic reading with anyone?</div>
+            <div class="v3-card__subtitle">Your reading will be very personal and cherished, sharing it will devalue it's message.</div>
+            <div class="v3-card__questions" style="overflow: hidden">
+                <a class="v3-questions__fast-card" id="q2answYes"><img src="/static/images/impcard.png"><span>YES</span></a>
+                <a class="v3-questions__fast-card" id="q2answNo"><img src="/static/images/impcard.png"><span>NO</span></a>
+            </div>
+        </div>
+        <div class="v3-card" id="card3" data-q="charitable">
+            <div class="v3-card__title">Do you consider yourself a charitable person?</div>
+            <div class="v3-card__subtitle">I can only help those who promise to pay it forward.</div>
+            <div class="v3-card__questions" style="overflow: hidden">
+                <a class="v3-questions__fast-card" id="q2answYes"><img src="/static/images/impcard.png"><span>YES</span></a>
+                <a class="v3-questions__fast-card" id="q2answNo"><img src="/static/images/impcard.png"><span>NO</span></a>
+            </div>
+        </div>
+        <div class="v3-card" id="card4" data-q="loading">
+            <div class="v3-card__title">Let's see if you qualify for your Angelic Reading...</div>
+            <div class="v8-loading__text-box">
+                <div class="v8-loading__text v8-loading__current" id="v8loading1">
+                    <span>Personal reading started</span>
+                    <div class="loader"></div>
+                    <div class="v8-loading__tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="v8-loading__text" id="v8loading2">
+                    <span>Preparing FREE gift</span>
+                    <div class="loader"></div>
+                    <div class="v8-loading__tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="v8-loading__text" id="v8loading3">
+                    <span>Limited-time availability</span>
+                    <div class="loader"></div>
+                    <div class="v8-loading__tick"><i class="fas fa-check"></i></div>
+                </div>
+            </div>
+            <div class="v8-loading__quote">
+                <img src="/static/images/elysia2_headshot_large.png">
+                <span>This reading must stay a secret between us and the world of the angels. Do not tell anyone else about it...</span>
+            </div>
+        </div>
+        <div class="v3-card" id="card5" data-q="checkout">
+            <div class="v3-card__title">Ok - I believe you are ready to change your life...</div>
+            <div class="v3-card__subtitle">Now is the time to take action.</div>
+            <div class="v3-card__questions" style="font-size: 18px;">
+                <p>Dear {{ account.first_name }},</p>
+                <p>As I previously mentioned, your window for success has almost closed. Your astral configuration will not be aligned like this for another 43 years!</p>
+                <p>{{ account.first_name }}, we’ve found each other for a reason. It’s proof that your Angel is looking out for you. They believe in you and know that you are deserving of their trust.</p>
+                <p>I know that you will use your new spiritual gains for good. I know that you will not betray your Angel’s trust by sharing her words with others. And I also know that your heart is a kind one.</p>
+                <p>{{ account.first_name }}, I can feel your kindness. Your Angel loves and respects your charitable heart. You strongly believe that one must first give in order to receive. It’s why your aura is so unique and It’s why you’ve been chosen.</p>
+                <p>You are a person of great moral standing. You just need the luck that your actions so richly deserve… and I’m pleased to say you’re very, very close.</p>
+                <p>To show you my friendship, I am offering you (with the blessing of your Angel) your Great 12-month Angelic Tarot Reading. I will ask in return for only a small donation as a contribution to the personal time and effort I have spent connecting you with a new future of greater wealth, love and luck.</p>
+                <p>I want you to have as much as I can possibly give, so I also want to give you a FREE gift. One that has seen me through challenging times. The celestial music of the prodigies is a constant reminder that you will never be alone. You are on a path, you are guided and you are loved.</p>
+                <p>I want this for you {{ account.first_name }}. Please answer me now! I fear that if you wait any longer you’ll miss this one and only opportunity to live the life you’ve been so desperately seeking.</p>
+                <p>Your friend who is thinking of you,</p>
+                <span class="sales-signature">Elysia</span>
+                <div class="v3-details__bank" style="margin-top: 20px">
+                    <h5 class="v3-details__bank-title"><i class="fal fa-lock-alt"></i> Secure Donation</h5>
+                    <p>Your contribution is 100% protected and secure.</p>
+                    <h5 id="orderTotal" style="font-weight: bold; margin: 10px 0 20px;">${{ price }}.00 (one-time donation)</h5>
+                    <a class="three-parts">I'd prefer to make my donation to Elysia in 3 parts (No extra cost)</a>
+                    <div class="v3-input__error-box">
+                        <label class="v3-input__label" for="card-number">Card Number</label>
+                        <div class="stripeBox" id="card-number-element" class="field"></div>
+                    </div>
+                    <div class="v3-input__error-box">
+                        <label class="v3-input__label" for="card-expiry">Expiry Date</label>
+                        <div class="stripeBox" id="card-expiry-element" class="field"></div>
+                    </div>
+                    <div class="v3-input__error-box">
+                        <label class="v3-input__label" for="card-cvv">Security Code</label>
+                        <div class="stripeBox" id="card-cvc-element" class="field"></div>
+                    </div>
+                    <div id="card-errors"></div>
+                    <a class="cc-complete">Yes, I Want To Claim My Reading + FREE Gift!</a>
+                    <div class="v3-details__bank-logos">
+                        <img src="/static/images/comodossl.png">
+                        <img src="/static/images/cardtings.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="signup__lightbox__background-outer">
+        <div class="v3-lightbox">
+            <div class="lightboxContentReplace">
+                <h3>1. Terms</h3>
+                By accessing the website at https://www.justgivingback.com, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.
+                <h3>2. Use License</h3>
+                <ol>
+                    <li>Permission is granted to temporarily download one copy of the materials (information or software) on JustGivingBack's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+                        <ol>
+                            <li>modify or copy the materials;</li>
+                            <li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>
+                            <li>attempt to decompile or reverse engineer any software contained on JustGivingBack's website;</li>
+                            <li>remove any copyright or other proprietary notations from the materials; or</li>
+                            <li>transfer the materials to another person or "mirror" the materials on any other server.</li>
+                        </ol>
+                    </li>
+                    <li>This license shall automatically terminate if you violate any of these restrictions and may be terminated by JustGivingBack at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</li>
+                </ol>
+                <h3>3. Disclaimer</h3>
+                <ol>
+                    <li>The materials on JustGivingBack's website are provided on an 'as is' basis. JustGivingBack makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</li>
+                    <li>Further, JustGivingBack does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.</li>
+                </ol>
+                <h3>4. Limitations</h3>
+                In no event shall JustGivingBack or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on JustGivingBack's website, even if JustGivingBack or a JustGivingBack authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.
+                <h3>5. Accuracy of materials</h3>
+                The materials appearing on JustGivingBack's website could include technical, typographical, or photographic errors. JustGivingBack does not warrant that any of the materials on its website are accurate, complete or current. JustGivingBack may make changes to the materials contained on its website at any time without notice. However JustGivingBack does not make any commitment to update the materials.
+                <h3>6. Links</h3>
+                JustGivingBack has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by JustGivingBack of the site. Use of any such linked website is at the user's own risk.
+                <h3>7. Modifications</h3>
+                JustGivingBack may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.
+                <h3>8. Governing Law</h3>
+                These terms and conditions are governed by and construed in accordance with the laws of United Kingdom and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.
+                <h3>Privacy Policy</h3>
+                Your privacy is important to us.
+
+                It is JustGivingBack's policy to respect your privacy regarding any information we may collect while operating our website. Accordingly, we have developed this privacy policy in order for you to understand how we collect, use, communicate, disclose and otherwise make use of personal information. We have outlined our privacy policy below.
+                <ul>
+                    <li>We will collect personal information by lawful and fair means and, where appropriate, with the knowledge or consent of the individual concerned.</li>
+                    <li>Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.</li>
+                    <li>We will collect and use personal information solely for fulfilling those purposes specified by us and for other ancillary purposes, unless we obtain the consent of the individual concerned or as required by law.</li>
+                    <li>Personal data should be relevant to the purposes for which it is to be used, and, to the extent necessary for those purposes, should be accurate, complete, and up-to-date.</li>
+                    <li>We will protect personal information by using reasonable security safeguards against loss or theft, as well as unauthorized access, disclosure, copying, use or modification.</li>
+                    <li>We will make readily available to customers information about our policies and practices relating to the management of personal information.</li>
+                    <li>We will only retain personal information for as long as necessary for the fulfilment of those purposes.</li>
+                </ul>
+                We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained. JustGivingBack may change this privacy policy from time to time at JustGivingBack's sole discretion.
+            </div>
+            <p class="v3-lightbox__close">Close <i class="fas fa-times-circle"></i></p>
+        </div>
+    </div>
+</div>
+<style>
+    #year-error {
+        display: none!important;
+    }
+    #month-error {
+        display: none!important;
+    }
+    #day-error {
+        display: none!important;
+    }
+</style>
+<script>var cid = "{{ cid }}"; var csrf = "{{ csrf_token }}";</script>
+<script>
+    var elements = stripe.elements();
+
+    var style = {
+        base: {
+            iconColor: '#666EE8',
+            fontSize: '16px',
+            fontFamily: 'Helvetica Neue',
+            color: '#000000',
+            padding: '10px 0',
+            background: '#ffffff'
+        }
+    };
+
+    var cardNumberElement = elements.create('cardNumber', {
+        style: style,
+        placeholder: "4000 0000 0000 0000"
+    });
+    cardNumberElement.mount('#card-number-element');
+
+    var cardExpiryElement = elements.create('cardExpiry', {
+        style: style,
+        placeholder: "MM/YY"
+    });
+    cardExpiryElement.mount('#card-expiry-element');
+
+    var cardCvcElement = elements.create('cardCvc', {
+        style: style,
+        placeholder: "123"
+    });
+    cardCvcElement.mount('#card-cvc-element');
+
+    $(".cc-complete").click(function() {
+        stripe.createToken(cardNumberElement).then(function(result) {
+            if (result.error) {
+                var errorElement = document.getElementById('card-errors');
+                errorElement.textContent = result.error.message;
+            } else {
+                stripeTokenHandler(result.token);
+            }
+        });
+    });
+
+    function stripeTokenHandler(stripe_token) {
+        var create_form = "<form id='create_form' action='/process?cid={{ cid }}&uid={{ account.id }}' method='post'><input name='csrfmiddlewaretoken' value='" + csrf + "'><input name='method' value='" + answers["method"] + "'><input name='price' value='{{ price }}'></form>";
+        $('body').append(create_form);
+        var form = $("#create_form");
+        var token = document.createElement('input');
+        token.setAttribute('name', 'stripeToken');
+        token.setAttribute('value', stripe_token.id);
+        form.append(token);
+        form.submit();
+    }
+
+    $(".three-parts").click(function() {
+        if ($("#orderTotal").text().indexOf("months") !== -1) {
+            answers["method"] = "total";
+            $("#orderTotal").text("${{ price }}.00 (one-time donation)");
+            $(this).text("I'd prefer to make my donation to Elysia in 3 parts (No extra cost)");
+        } else {
+            answers["method"] = "installments";
+            $("#orderTotal").text("${{ installment|floatformat:"2" }} for 3 months");
+            $(this).text("I'd prefer to make my donation to Elysia in full (${{ price }}.00 today)");
+        }
+    });
+</script>
+<script src="/static/js/cc-checkout.js"></script>
+</body>
